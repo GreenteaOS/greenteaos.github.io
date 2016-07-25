@@ -31,7 +31,7 @@ img { max-width: 100%; }
     margin: 0 auto;
     text-align: center;
     color: #fff;
-    background-image: url(../backcode.png)
+    background: url(../backcode.png) #272822;
 }
 
 .coming-soon h1 {
