@@ -51,14 +51,14 @@ img { max-width: 100%; }
     line-height: 44px;
     font-weight: 700;
     text-transform: uppercase;
-    text-shadow: 0 1px 7px #000;
+    text-shadow: 0 1px 27px rgba(0, 0, 0, 0.5);
 }
 
 .coming-soon p {
     margin-top: 20px;
     font-size: 18px;
     line-height: 36px;
-    text-shadow: 0 1px 7px #000;
+    text-shadow: 0 1px 17px rgba(0, 0, 0, 0.4);
 }
 
 
