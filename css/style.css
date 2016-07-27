@@ -55,14 +55,16 @@ img { max-width: 100%; }
 }
 
 .coming-soon p {
-    margin-top: 20px;
+    margin: 0;
     font-size: 18px;
     line-height: 36px;
     display: inline-block;
     background: rgba(39, 40, 34,0.6);
 }
 
-
+.coming-soon__paragraph-wrap {
+    margin: 20px 0 10px;
+}
 
 
 
