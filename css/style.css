@@ -58,7 +58,8 @@ img { max-width: 100%; }
     margin-top: 20px;
     font-size: 18px;
     line-height: 36px;
-    text-shadow: 0 1px 17px rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    background: rgba(39, 40, 34,0.6);
 }
 
 
