@@ -59,7 +59,7 @@ img { max-width: 100%; }
     font-size: 18px;
     line-height: 36px;
     display: inline-block;
-    background: #272822;
+    background: rgba(39, 40, 34,0.6);
 }
 
 
