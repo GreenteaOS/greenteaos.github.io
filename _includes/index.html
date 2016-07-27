@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="{{page.lang}}">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ site.data[page.lang].title  }}</title>
+        <meta name="author" content="Greentea OS">
+        <meta name="theme-color" content="#24c12e">
+        <link rel="icon" href="images/favicon-16px.png" type="image/png" sizes="16x16">
+        <link rel="icon" href="images/favicon-32px.png" type="image/png" sizes="32x32">
+        <link rel="icon" href="images/favicon-96px.png" type="image/png" sizes="96x96">
+        <!-- Twitter card -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@osgreentea" />
+        <meta name="twitter:creator" content="Greentea OS Team" /> 
+        <meta name="twitter:title" content="Greentea OS" /> 
+        <meta name="twitter:description" content="Greentea OS is a fork of ReactOS, a free Windows-compatible Operating System written from scratch, but more user and production oriented. We would first make it *actually* usable for day-to-day use." /> 
+        <meta name="twitter:image" content="https://osgreentea.github.io/images/opengraph.png" /> 
+        <!-- Open graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Greentea OS" />
+        <meta property="og:description" content="Greentea OS is a fork of ReactOS, a free Windows-compatible Operating System written from scratch, but more user and production oriented (than ReactOS itself). We would first make it *actually* usable for day-to-day use." />
+        <meta property="og:url" content="https://osgreentea.github.io" />
+        <meta property="og:image" content="https://osgreentea.github.io/images/opengraph.png" />
+        <!-- CSS -->
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,700'>
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+
+    <body>
+
+        <!-- Coming Soon -->
+        <div class="coming-soon">
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 col-md-12">
+                            <img src="/images/logo.png" alt="Logo of Greentea OS" width="250" height="250">
+                            <h2>{{ site.data[page.lang].were-coming-soon }}</h2>
+                            <p id="m">{{ site.data[page.lang].coming-soon_we-are-working }}</p>
+                            <a href='https://github.com/OSGreentea/Greentea/issues' class="bt btn-default">{{ site.data[page.lang].become-a-dev }}</a>
+                            <p>{{ site.data[page.lang].coming-soon_or }}</p>
+                            <a href='https://github.com/OSGreentea/Greentea/blob/master/README.md' class="bt btn-default">
+                                {{ site.data[page.lang].see-our-wiki }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12 col-md-12">
+                    <h1>{{ site.data[page.lang].about-us_header }}</h1>
+                    <p>{{ site.data[page.lang]about-us }}</p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p class="text-muted small">{{ site.data[page.lang]footer_made-by }}</p>
+            </div>
+        </footer>
+ </body>
+
+</html>

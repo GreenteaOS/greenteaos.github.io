@@ -1,0 +1,14 @@
+{
+	"title": "Greantea OS",
+	"were-coming-soon": "Скоро",
+
+	"coming-soon_we-are-working": "Мы работаем над новой версией сайта. В ней появится много новых возможностей. Не пропусти!",
+	"coming-soon_or": "или",
+	"become-a-dev": "Принять участие",
+	"see-our-wiki": "Узнать больше",
+
+	"about-us_header": "О нас",
+	"about-us": "Greentea OS - это ответвление <a href='https://reactos.org'>ReactOS</a>, свободной Windows-совместимой операционной системы, написанной с нуля, но более ориентированное на пользователей и организации. В первую очередь мы намерены сделать его *действительно* пригодным для каждодневного использования.",
+
+	"footer_made-by": "Страница создана Николо Альтамура, командой Greentea OS, и сообществом. <a href='https://ru.wikipedia.org/wiki/Зелёный_чай'>Зелёный чай</a> - как кофе, <a href='https://github.com/OSGreentea/Kernel'>Greentea</a> - как ОС. GreenTeaOS - тоже неплохо :)"
+}
