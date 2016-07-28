@@ -69,7 +69,23 @@ img { max-width: 100%; }
 
 
 /***** Content *****/
-
+@media (max-width: 991px) {
+  .twitter-wrap,
+  .about-us-wrap {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .twitter-wrap,
+  .about-us-wrap {
+    width: 50%;
+  }
+}
+.twitter-wrap,
+.about-us-wrap {
+  padding: 0 15px;
+  float: left;
+}
 
 
 /***** Media Queries *****/
