@@ -88,6 +88,15 @@ img { max-width: 100%; }
 }
 
 
+
+/***** Footer *****/
+.footer__text {
+    text-align: center;
+    margin-top: 2em;
+}
+
+
+
 /***** Media Queries *****/
 
 
