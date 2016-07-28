@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ site.data[page.lang].title  }}</title>
+        <title>{% include localise.html string="title"  %}</title>
         <meta name="author" content="Greentea OS">
         <meta name="theme-color" content="#24c12e">
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -41,16 +41,16 @@
                     <div class="row">
                         <div class="col-sm-12 col-xs-12 col-md-12">
                             <img src="/images/logo.png" alt="Logo of Greentea OS" width="250" height="250">
-                            <h2>{{ site.data[page.lang].were-coming-soon | default: site.data.en.were-coming-soon  }}</h2>
+                            <h2>{% include localise.html string="were-coming-soon" %}</h2>
                             <div class="coming-soon__paragraph-wrap">
-                                <p id="m">{{ site.data[page.lang].coming-soon_we-are-working | default: site.data.en.coming-soon_we-are-working }}</p>
+                                <p id="m">{% include localise.html string="coming-soon_we-are-working" %}</p>
                             </div>
-                            <a href='https://github.com/OSGreentea/Greentea/issues' class="bt btn-default">{{ site.data[page.lang].become-a-dev | default: site.data.en.become-a-dev }}</a>
+                            <a href='https://github.com/OSGreentea/Greentea/issues' class="bt btn-default">{% include localise.html string="become-a-dev" %}</a>
                             <div class="coming-soon__paragraph-wrap">
-                                <p>{{ site.data[page.lang].coming-soon_or | default: site.data.en.coming-soon_or }}</p>
+                                <p>{% include localise.html string="coming-soon_or" %}</p>
                             </div>
                             <a href='https://github.com/OSGreentea/Greentea/blob/master/README.md' class="bt btn-default">
-                                {{ site.data[page.lang].see-our-wiki | default: site.data.en.see-our-wiki }}</a>
+                                {% include localise.html string="see-our-wiki" %}</a>
                         </div>
                     </div>
                 </div>
@@ -64,15 +64,15 @@
                     <a class="twitter-timeline" data-link-color="#e75967" href="https://twitter.com/osgreentea">Tweets by osgreentea</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
                 <div class="about-us-wrap">
-                    <h1>{{ site.data[page.lang].about-us_header | default: site.data.en.about-us_header }}</h1>
-                    <p>{{ site.data[page.lang].about-us | default: site.data.en.about-us }}</p>
+                    <h1>{% include localise.html string="about-us_header" %}</h1>
+                    <p>{% include localise.html string="about-us" %}</p>
                 </div>
             </div>
         </div>
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
-                <p class="text-muted small footer__text">{{ site.data[page.lang].footer_made-by | default: site.data.en.footer_made-by }}</p>
+                <p class="text-muted small footer__text">{% include localise.html string="footer_made-by" %}</p>
             </div>
         </footer>
  </body>
