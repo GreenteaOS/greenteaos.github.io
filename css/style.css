@@ -104,8 +104,6 @@ img { max-width: 100%; }
 
 @media (max-width: 767px) {
 
-    .logo h1 { text-align: center; }
-    .call-us { padding-bottom: 7px; text-align: center; }
 
     .inner-bg { padding: 45px 0 50px 0; }
 
