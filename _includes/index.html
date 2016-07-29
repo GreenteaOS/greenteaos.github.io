@@ -4,7 +4,7 @@
     <head>
         {% if page.root == true %}
         <script>
-            var lang = (window.navigator.languages[0] || window.navigator.userLanguage || window.navigator.language || window.navigator.systemLanguage).substr(0, 2).toLowerCase();
+            var lang = ((window.navigator.languages && window.navigator.languages[0]) || window.navigator.userLanguage || window.navigator.language || window.navigator.systemLanguage).substr(0, 2).toLowerCase();
             av = {"ru":1,"it":1};
             if (av[lang]) {
                 location.pathname = lang + location.pathname;
