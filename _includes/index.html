@@ -35,9 +35,11 @@
         <meta property="og:url" content="https://osgreentea.github.io" />
         <meta property="og:image" content="https://osgreentea.github.io/images/opengraph.png" />
         <!-- CSS -->
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,700'>
-        <!--<link rel="stylesheet" href="/css/bootstrap.css">-->
-        <link rel="stylesheet" href="/css/style.css">
+        <noscript>
+            <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,700'>
+            <!--<link rel="stylesheet" href="/css/bootstrap.css">-->
+            <link rel="stylesheet" href="/css/style.css">
+        </noscript>
     </head>
 
     <body>
@@ -83,6 +85,18 @@
                 <p class="text-muted small footer__text">{% include localise.html string="footer_made-by" %}</p>
             </div>
         </footer>
+        <script>
+            var fonts = document.createElement("link");
+            fonts.setAttribute("rel", "stylesheet");
+            fonts.setAttribute("type", "text/css");
+            fonts.setAttribute("href", "https://fonts.googleapis.com/css?family=Lato:400,700");
+            document.querySelector("head").appendChild(fonts);
+            var style = document.createElement("link");
+            style.setAttribute("rel", "stylesheet");
+            style.setAttribute("type", "text/css");
+            style.setAttribute("href", "/css/style.css");
+            document.querySelector("head").appendChild(style);
+        </script>
  </body>
 
 </html>
