@@ -70,21 +70,21 @@ img { max-width: 100%; }
 
 /***** Content *****/
 @media (max-width: 991px) {
-  .twitter-wrap,
-  .about-us-wrap {
-    width: 100%;
-  }
+    .twitter-wrap,
+    .about-us-wrap {
+        width: 100%;
+    }
 }
 @media (min-width: 992px) {
-  .twitter-wrap,
-  .about-us-wrap {
-    width: 50%;
-  }
+    .twitter-wrap,
+    .about-us-wrap {
+        width: 50%;
+    }
 }
 .twitter-wrap,
 .about-us-wrap {
-  padding: 0 15px;
-  float: left;
+    padding: 0 15px;
+    float: left;
 }
 
 
@@ -111,25 +111,23 @@ img { max-width: 100%; }
 
     .coming-soon h2 { font-size: 36px; }
 
-    
-
 }
 
 
 .bt {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 25px;
-  font-weight: normal;
-  line-height: 1.428571429;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  -webkit-user-select: none;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
        -o-user-select: none;
