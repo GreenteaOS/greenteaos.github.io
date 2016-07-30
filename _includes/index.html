@@ -11,6 +11,11 @@
             }
         </script>
         {% endif %}
+        <script>
+            {% include font-caching.js %}
+            loadFont("Lato Regular", "https://fonts.gstatic.com/s/lato/v11/9k-RPmcnxYEPm8CNFsH2gg.woff", "https://fonts.gstatic.com/s/lato/v11/1YwB1sO8YE1Lyjf12WNiUA.woff2");
+            loadFont("Lato Bold", "https://fonts.gstatic.com/s/lato/v11/wkfQbvfT_02e2IWO3yYueQ.woff", "https://fonts.gstatic.com/s/lato/v11/H2DMvhDLycM56KNuAtbJYA.woff2");
+        </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +40,9 @@
         <meta property="og:url" content="https://osgreentea.github.io" />
         <meta property="og:image" content="https://osgreentea.github.io/images/opengraph.png" />
         <!-- CSS -->
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,700'>
+        <noscript>
+            <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,700'>
+        </noscript>
         <!--<link rel="stylesheet" href="/css/bootstrap.css">-->
         <link rel="stylesheet" href="/css/style.css">
     </head>
