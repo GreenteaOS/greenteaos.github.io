@@ -388,4 +388,13 @@ mark {
   background-color: #10b715;
   color: #fff;
 }    
+
+.alignright{
+padding: 0;
+    float: right;
+    margin: 6px 0 6px 20px;
+    border: 0px;
+    display: block;
+    background: none; }
+    
 {% include backcode.css %}
