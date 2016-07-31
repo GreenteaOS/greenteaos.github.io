@@ -40,7 +40,6 @@
 }
 .highlight > pre {
   padding: 0;
-  margin: 0;
 }
 .highlight > pre,
 .highlight .code > pre,
@@ -50,6 +49,7 @@
   font-family: Nimbus Mono L, Courier New, Courier, monospace;
   padding: 5px;
   padding-top: 0;
+  margin: 0;
 }
 .noselect {
   -webkit-touch-callout: none;
