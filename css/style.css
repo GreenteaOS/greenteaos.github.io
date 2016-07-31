@@ -253,6 +253,8 @@ img {
     text-align: center;
     color: #fff;
     background: url(../images/backcode.png) #272822;
+    position:relative;
+    overflow:hidden;
 }
 
 .coming-soon h1 {
