@@ -6,9 +6,6 @@
   flex-direction: row;
 }
 /* highlight */
-.highlight {
-  margin: 0;
-}
 .highlight .cm,
 .highlight .c1 { /*Comment*/
   color: #726e5b;
@@ -37,11 +34,13 @@
   border-radius: 0;
 }
 .highlight {
+  margin: 0;
   text-align: left;
   font-family: monospace;
 }
 .highlight > pre {
   padding: 0;
+  margin: 0;
 }
 .highlight > pre,
 .highlight .code > pre,
@@ -49,6 +48,7 @@
   background: #272822;
   color: #8f9078;
   font-family: Nimbus Mono L, Courier New, Courier, monospace;
+  padding: 5px;
   padding-top: 0;
 }
 .noselect {
