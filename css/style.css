@@ -250,7 +250,7 @@ img {
     margin: 0 auto;
     text-align: center;
     color: #fff;
-    background: #272822;
+    background: url(../images/backcode.png) #272822;
 }
 
 .coming-soon h1 {
@@ -371,4 +371,5 @@ img {
     width: 35px;
     background-color: #24c12e;
 }
-{% include backcode.css %}
+
+.feature-box
