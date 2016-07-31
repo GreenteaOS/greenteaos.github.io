@@ -252,7 +252,7 @@ img {
     margin: 0 auto;
     text-align: center;
     color: #fff;
-    background: url(../images/backcode.png) #272822;
+    background: #272822;
     position:relative;
     overflow:hidden;
 }
