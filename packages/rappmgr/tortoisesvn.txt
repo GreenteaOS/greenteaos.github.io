@@ -1,0 +1,16 @@
+﻿[Section]
+Name = TortoiseSVN
+Version = 1.8.9
+License = GNU GPL 2
+Description = Free client for the Subversion version control system.
+Size = 14.8 MiB
+Category = 7
+URLSite = https://tortoisesvn.net/
+URLDownload = http://vorboss.dl.sourceforge.net/project/tortoisesvn/1.8.9/Application/TortoiseSVN-1.8.9.26117-win32-svn-1.8.11.msi
+SHA1 = 21D68EA19E0D29B791A117C0AF7CA4BA7F9EB905
+CDPath = none
+
+[Section.0419]
+License = GNU GPL 2
+Description = Бесплатный клиент для системы контроля версий Subversion.
+Size = 14,8 МБ

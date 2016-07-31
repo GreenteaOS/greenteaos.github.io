@@ -1,0 +1,17 @@
+﻿[Section]
+Name = WinDjView
+Version = 2.1
+License = GNU GPL
+Description = Free software with open source software to view files in the DJV and DjVu format.
+Size = 2.8 MiB
+Category = 6
+URLSite = http://windjview.sourceforge.net/
+URLDownload = http://vorboss.dl.sourceforge.net/project/windjview/WinDjView/2.1/WinDjView-2.1-Setup.exe
+SHA1 = BBF32F86DC8DB03A73C1331A04D73B41BC80C52B
+CDPath = none
+
+[Section.0419]
+Version = 2.1
+License = GNU GPL
+Description = Бесплатная программа с открытым исходным кодом для просмотра файлов в формате DJV и DjVu.
+Size = 2,8 МБ
