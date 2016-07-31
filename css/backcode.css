@@ -1,0 +1,51 @@
+/* highlight */
+.highlight .cm,
+.highlight .c1 { /*Comment*/
+  color: #726e5b;
+}
+.highlight .s,
+.highlight .err + .n + .p,
+.highlight .err + .n + .p + .n,
+.highlight .err + .n + .p + .n + .p,
+.highlight .err + .n + .p + .n + .p + .n,
+.highlight .err + .n + .p + .n + .p + .n + .p,
+.highlight .err + .n + .p + .n + .p + .n + .p + .n { /*String*/
+  color: #E6DB74;
+}
+.highlight .err,
+.highlight .err + .n { /*Keyword*/
+  color: #F92672;
+}
+.highlight .nf { /* Library class/type*/
+  color: #66D9EF;
+}
+.highlight .n,.p {
+  color: white;
+}
+.highlight  pre { /* antibootstrap */
+  border: 0; 
+  border-radius: 0;
+}
+.highlight {
+  text-align: left;
+  font-family: monospace;
+}
+.highlight > pre {
+  padding: 0;
+}
+.highlight > pre,
+.highlight .code > pre,
+.highlight .lineno {
+  background: #272822;
+  color: #8f9078;
+  font-family: Nimbus Mono L, Courier New, Courier, monospace;
+  padding-top: 0;
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
