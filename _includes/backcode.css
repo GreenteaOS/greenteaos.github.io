@@ -6,6 +6,9 @@
   flex-direction: row;
 }
 /* highlight */
+.highlight {
+  margin: 0;
+}
 .highlight .cm,
 .highlight .c1 { /*Comment*/
   color: #726e5b;
