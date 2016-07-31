@@ -383,4 +383,9 @@ padding: 160px 0;
     z-index: 10;
     overflow: hidden;
     margin: 0;}
+    
+mark {
+  background-color: #10b715;
+  color: #fff;
+}    
 {% include backcode.css %}
