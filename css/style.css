@@ -357,7 +357,44 @@ img {
     width: auto;
     margin: 0 auto;
 }
-
+.expand-drawer,
+.drawer-fade {
+    display: none;
+}
+@media (max-width: 767px) {
+    .expand-drawer {
+        display: block;
+        height: 100%;
+        width: 50px;
+        float: right;
+    }
+    .drawer {
+        width: 260px;
+        max-width: 95%;
+        min-height: 100%;
+        position: fixed;
+        background: #FAFAFA;
+        top: 0;
+        right: -260px;
+        transition-property: right;
+        transition: 0.2s;
+    }
+    .drawer:target,
+    .drawer_expanded {
+        right: 0;
+    }
+    .drawer:target + .drawer-fade,
+    .drawer_expanded + .drawer-fade {
+        display: block;
+        background: rgba(0,0,0,0.5);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
 .feature-box-icon {
   background: #CCC;
     border-radius: 35px;
