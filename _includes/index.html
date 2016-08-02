@@ -13,8 +13,10 @@
         {% endif %}
         <script>
             {% include font-caching.js %}
-            loadFont("Lato Regular", "https://fonts.gstatic.com/s/lato/v11/9k-RPmcnxYEPm8CNFsH2gg.woff", "https://fonts.gstatic.com/s/lato/v11/1YwB1sO8YE1Lyjf12WNiUA.woff2");
-            loadFont("Lato Bold", "https://fonts.gstatic.com/s/lato/v11/wkfQbvfT_02e2IWO3yYueQ.woff", "https://fonts.gstatic.com/s/lato/v11/H2DMvhDLycM56KNuAtbJYA.woff2");
+            loadFont("Roboto", "/css/latin Roboto woff.css", "/css/latin Roboto woff2.css");
+            {% if page.lang == "ru" %}
+                loadFont("Roboto", "/css/cyrillic Roboto woff.css", "/css/cyrillic Roboto woff2.css");
+            {% endif %}
         </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,7 +45,11 @@
         <meta name="yandex-verification" content="32056ab36613b18e" />
         <!-- CSS -->
         <noscript>
-            <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,700'>
+            {% if page.lang == "ru" %}
+                <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
+            {% else %}
+                <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+            {% endif %}
         </noscript>
         <!--<link rel="stylesheet" href="/css/bootstrap.css">-->
         <link rel="stylesheet" href="/css/style.css">
