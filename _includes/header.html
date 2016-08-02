@@ -13,10 +13,14 @@
                         <a href="download.html">Download</a>    
                     </li>
                     <li>
-                        <a href="dev.html">Developer</a>    
+                        <a href="https://github.com/OSGreentea/Greentea">Developer</a>    
                     </li>
                     <li>
-                        <a href="wiki.html">Wiki</a>
+                        {% if page.lang == "ru" %}
+                            <a href="https://github.com/OSGreentea/Greentea/blob/master/russian/README.md">Wiki</a>
+                        {% else %}
+                            <a href="https://github.com/OSGreentea/Greentea/blob/master/english/README.md">Wiki</a>
+                        {% endif %}
                     </li>
                     <li>
                         <a href="about.html">About us</a>
