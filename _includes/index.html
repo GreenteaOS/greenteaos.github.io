@@ -45,7 +45,11 @@
         <meta name="yandex-verification" content="32056ab36613b18e" />
         <!-- CSS -->
         <noscript>
-            <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
+            {% if page.lang == "ru" %}
+                <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
+            {% else %}
+                <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+            {% endif %}
         </noscript>
         <!--<link rel="stylesheet" href="/css/bootstrap.css">-->
         <link rel="stylesheet" href="/css/style.css">
