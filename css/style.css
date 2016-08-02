@@ -1,7 +1,6 @@
 ---
 ---
 html {
-  font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -90,7 +89,6 @@ img {
 }
 h1,
 h2 {
-  font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -207,7 +205,7 @@ body {
     margin: 0;
     background: #f8f8f8;
     border-top: 10px solid #24c12e;
-    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #000;
