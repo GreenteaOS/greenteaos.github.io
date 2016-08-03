@@ -367,7 +367,7 @@ img {
         height: 50px;
         width: 50px;
         float: right;
-        background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_menu_black_24px.svg) center no-repeat;
+        background: url(/images/menu_24px.svg) center no-repeat;
     }
     .drawer {
         width: 300px;
