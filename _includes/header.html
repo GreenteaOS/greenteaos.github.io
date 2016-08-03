@@ -3,8 +3,9 @@
         <div class="container">
             <div class="navbar-header">
                     <a href="#" class="navbar-brand"><img src="images/logo.png"></a>
+                    <a class="expand-drawer" href="#drawer" onclick="document.getElementById('drawer').className += ' drawer_expanded'; event.preventDefault();"></a>
             </div>
-            <div class="collapse navbar-collapse">
+            <div id="drawer" class="drawer">
                 <ul class="nav navbar-nav navbar-right navbar-uppercase">
                     <li>
                         <a href="home.html">Home</a>
@@ -27,6 +28,7 @@
                     </li>
                 </ul>
             </div>
+            <a class="drawer-fade" href="#0" onclick="document.getElementById('drawer').className = document.getElementById('drawer').className.replace(new RegExp('(\\s|^)'+'drawer_expanded'+'(\\s|$)'), ' '); event.preventDefault();"></a>
         </div>
     </nav>
 </header>
