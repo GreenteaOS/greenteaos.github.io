@@ -364,7 +364,7 @@ img {
 @media (max-width: 767px) {
     .expand-drawer {
         display: block;
-        height: 100%;
+        height: 50px;
         width: 50px;
         float: right;
         background: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_menu_black_24px.svg) center no-repeat;
@@ -379,6 +379,7 @@ img {
         right: -300px;
         transition-property: right;
         transition: 0.2s;
+        z-index: 1;
     }
     .drawer:target,
     .drawer_expanded {
@@ -393,7 +394,9 @@ img {
         bottom: 0;
         left: 0;
         right: 0;
-        z-index: -1;
+    }
+    .navbar-nav {
+      margin: 0;
     }
 }
 .feature-box-icon {
