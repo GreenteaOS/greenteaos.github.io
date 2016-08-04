@@ -16,8 +16,8 @@ lang: en
         <link rel="stylesheet" href="css/bootstrap.css">
         
         <link rel="stylesheet" href="css/style.css">
-           <script src="js/jquery-1.11.1.js"></script>
-    <script src="js/bootstrap.js"></script>
+        <script src="js/jquery-1.11.1.js"></script>
+        <script src="js/bootstrap.js"></script>
 
     </head>
 
@@ -29,17 +29,17 @@ lang: en
             <div class="container">
                 <div class="content">
                 
-                <div class="row">
-            <div class="column alert">
-                <div class="icon">
-                    <i class="warning fa fa-warning"></i>
-                </div>
-                <div class="icon-text">
-                    <h3>This is a development site.</h3>
-                    <p>This is a work in progress. Sooo :)</p>
-                </div>
-            </div>
-       </div>
+                    <div class="row">
+                        <div class="column alert">
+                            <div class="icon">
+                                <i class="warning fa fa-warning"></i>
+                            </div>
+                            <div class="icon-text">
+                                <h3>This is a development site.</h3>
+                                <p>This is a work in progress. Sooo :)</p>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Carousel slideshow -->
                     <div id="#slideshow" class="carousel slide" data-ride="carousel">
                         
@@ -109,16 +109,16 @@ lang: en
                         <div class="feature-box-info"><h4>Lots of devs</h4><p>More than 50 devs joined in this project!</p></div>
                     </div>
                     <!-- For blog <ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul> -->
+                        {% for post in site.posts %}
+                            <li>
+                                <a href="{{ post.url }}">{{ post.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul> -->
+                </div>
             </div>
-        </div>
+        </div>    
         
-        
-    {% include footer.html %}
+        {% include footer.html %}
     </body>
 </html>
