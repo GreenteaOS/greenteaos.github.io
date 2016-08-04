@@ -44,8 +44,8 @@ lang: en
                     <div id="#slideshow" class="carousel slide" data-ride="carousel">
                         
                         <ol class="carousel-indicators">
-                            <li data-target="#slideshow" data-slide-to="0" class="active"></li>
-                             <li data-target="#slideshow" data-slide-to="1"></li>
+                            <li data-target="#slideshow" data-slide-to="0" class="item1 active"></li>
+                             <li data-target="#slideshow" data-slide-to="1"  class="item2"></li>
                         </ol>
                         
                         <div class="carousel-inner" role="listbox">
@@ -118,7 +118,29 @@ lang: en
                 </div>
             </div>
         </div>    
-        
+        <script>
+        $(document).ready(function(){
+            // Activate Carousel
+            $("#slideshow").carousel();
+            
+            // Enable Carousel Indicators
+            $(".item1").click(function(){
+                $("#slideshow").carousel(0);
+            });
+            $(".item2").click(function(){
+                $("#slideshow").carousel(1);
+            });
+
+            // Enable Carousel Controls
+            $(".left").click(function(){
+                $("#slideshow").carousel("prev");
+            });
+            $(".right").click(function(){
+                $("#slideshow").carousel("next");
+            });
+        });
+        </script>
+
         {% include footer.html %}
     </body>
 </html>
