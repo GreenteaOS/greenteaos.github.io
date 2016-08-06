@@ -8,23 +8,23 @@
             <div id="drawer" class="drawer">
                 <ul class="nav navbar-nav navbar-right navbar-uppercase">
                     <li>
-                        <a href="/home.html">Home</a>
+                        <a href="/home.html">{% include localise.html string="header_home" %}</a>
                     </li>
                     <li>
-                        <a href="/download/">Download</a>    
+                        <a href="/download/">{% include localise.html string="header_download" %}</a>    
                     </li>
                     <li>
-                        <a href="https://github.com/OSGreentea/Greentea">Developer</a>    
+                        <a href="https://github.com/OSGreentea/Greentea">{% include localise.html string="header_developer" %}</a>    
                     </li>
                     <li>
                         {% if page.lang == "ru" %}
-                            <a href="https://github.com/OSGreentea/Greentea/blob/master/russian/README.md">Wiki</a>
+                            <a href="https://github.com/OSGreentea/Greentea/blob/master/russian/README.md">{% include localise.html string="header_wiki" %}</a>
                         {% else %}
-                            <a href="https://github.com/OSGreentea/Greentea/blob/master/english/README.md">Wiki</a>
+                            <a href="https://github.com/OSGreentea/Greentea/blob/master/english/README.md">{% include localise.html string="header_wiki" %}</a>
                         {% endif %}
                     </li>
                     <li>
-                        <a href="/about.html">About us</a>
+                        <a href="/about.html">{% include localise.html string="header_ubout-us" %}</a>
                     </li>
                 </ul>
             </div>
