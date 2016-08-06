@@ -359,7 +359,7 @@ img {
 }
 .navbar-nav__link_current {
     pointer-events: none;
-    color: #252525;
+    color: #252525 !important;
 }
 .expand-drawer,
 .drawer-fade {
