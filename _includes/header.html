@@ -8,10 +8,10 @@
             <div id="drawer" class="drawer">
                 <ul class="nav navbar-nav navbar-right navbar-uppercase">
                     <li>
-                        <a href="/home/"{% if page.ref == "home" %}class="navbar-nav__link_current"{% endif %}>{% include localise.html string="header_home" %}</a>
+                        <a href="/home/"{% if ref == "home" %}class="navbar-nav__link_current"{% endif %}>{% include localise.html string="header_home" %}</a>
                     </li>
                     <li>
-                        <a href="/download/"{% if page.ref == "download" %}class="navbar-nav__link_current"{% endif %}>{% include localise.html string="header_download" %}</a>    
+                        <a href="/download/"{% if ref == "download" %}class="navbar-nav__link_current"{% endif %}>{% include localise.html string="header_download" %}</a>    
                     </li>
                     <li>
                         <a href="https://github.com/OSGreentea/Greentea">{% include localise.html string="header_developer" %}</a>    
@@ -24,7 +24,7 @@
                         {% endif %}
                     </li>
                     <li>
-                        <a href="/about.html"{% if page.ref == "ubout-us" %}class="navbar-nav__link_current"{% endif %}>{% include localise.html string="header_ubout-us" %}</a>
+                        <a href="/about.html"{% if ref == "ubout-us" %}class="navbar-nav__link_current"{% endif %}>{% include localise.html string="header_ubout-us" %}</a>
                     </li>
                 </ul>
             </div>
