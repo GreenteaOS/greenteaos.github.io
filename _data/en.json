@@ -10,5 +10,11 @@
 	"about-us_header": "About Us",
 	"about-us": "Greentea OS is a fork of <a href='https://reactos.org'>ReactOS</a>, a free Windows-compatible operating system, written from scratch, but more user and production oriented (than ReactOS itself). We would first make it *actually* usable for day-to-day use.",
 
-	"footer_made-by": "Cooming soon page created by  Greentea OS team and contributors. <a href='https://en.wikipedia.org/wiki/Green_tea'>Green tea</a> is like coffee, <a href='https://github.com/OSGreentea/Kernel'>Greentea</a> is like OS. GreenTeaOS is fine too :)"
+	"header_home": "Home",
+	"header_download": "Download",
+	"header_developer": "Developer",
+	"header_wiki": "Wiki",
+	"header_ubout-us": "Ubout us",
+
+	"footer_made-by": "Site is created by  Greentea OS team and contributors. <a href='https://en.wikipedia.org/wiki/Green_tea'>Green tea</a> is like coffee, <a href='https://github.com/OSGreentea/Kernel'>Greentea</a> is like OS. GreenTeaOS is fine too :)"
 }
