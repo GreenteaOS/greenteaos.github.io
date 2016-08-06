@@ -432,6 +432,10 @@ mark {
 .carousel-inner {
     background-color: #63696c;
 }
+.item-image {
+    object-fit: cover;
+    width: 100%;
+}
 
 .alignright{
     padding: 0;
