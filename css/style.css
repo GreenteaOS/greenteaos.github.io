@@ -434,11 +434,16 @@ mark {
 }
 
 .alignright{
-padding: 0;
+    padding: 0;
     float: right;
     margin: 6px 0 6px 20px;
     border: 0px;
     display: block;
-    background: none; }
-    
+    background: none;
+}
+
+.app-icon {
+    width: 48px;
+    height: 48px;
+}    
 {% include backcode.css %}
