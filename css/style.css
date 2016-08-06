@@ -357,6 +357,10 @@ img {
     width: auto;
     margin: 0 auto;
 }
+.navbar-bar_current {
+    pointer-events: none;
+    color: #252525;
+}
 .expand-drawer,
 .drawer-fade {
     display: none;
