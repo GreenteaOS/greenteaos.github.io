@@ -42,3 +42,6 @@ $RECYCLE.BIN/
 
 # Jekyll config, so branches can use own base-urls etc
 _config.yml
+
+# So you can use local server freely
+_site/
