@@ -38,3 +38,7 @@ $RECYCLE.BIN/
 .directory
 # Linux trash folder which might appear on any partition or disk
 .Trash-*
+
+
+# Jekyll config, so branches can use own base-urls etc
+_config.yml
