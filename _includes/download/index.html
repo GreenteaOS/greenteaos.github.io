@@ -14,7 +14,8 @@
         <link rel="stylesheet" href="/css/bootstrap.css">
         
         <link rel="stylesheet" href="/css/style.css">
-
+        <script src="/js/jquery-1.11.1.js"></script>
+        <script src"/js/bootstrap.js"></script>
     </head>
 
     <body>
@@ -25,6 +26,15 @@
                 <!-- WIP -->
                 <p class="warning">Please warning, this os is still in alpha. Many features can be absent.</p>
                 <a class="btn btn-info" href"#">Download Now</a>
+                <button type="button" data-toggle="modal" data-target="#download">Hello</button>
+                
+                <div id="download" class="modal fade" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <p>Hello</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>        
         {% include footer.html %}
