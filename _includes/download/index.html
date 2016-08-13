@@ -27,6 +27,125 @@
                 <p class="warning">Please warning, this os is still in alpha. Many features can be absent.</p>
                 <a class="btn btn-info" href"#">Download Now</a>
             
+            <button class="btn-lg btn-primary" data-borl="LiveCD" data-target="#bootcdModal" data-toggle="modal">Download Something</button>
+            
+            <div class="modal fade" id="bootcdModal" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-lg" style="border: 2px solid rgb(0, 136, 204);" role="document">
+		<div class="modal-content">
+			<div class="modal-header"><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				<h4 class="modal-title">Help ReactOS to reach Beta</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="panel-group secundary" id="accordion2">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="#collapse2One">Send us a coffee each month... </a></h4>
+								</div>
+								<div class="accordion-body collapse in" id="collapse2One">
+									<div class="panel-body"><div id="block-paypal-donations-paypal-donations-recurring" class="block block-paypal-donations">
+
+    
+  <div class="content">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="monthly-donation-form donation-form">
+  <div class="inner_content">
+
+    <input type="hidden" name="lc" value="US" />
+
+    <input name="landing_page" type="hidden" value="billing" />
+    <input name="cpp_cart_border_color" type="hidden" value="FF0000" />
+        <input name="cpp_payflow_color" type="hidden" value="D20137" />
+    <input name="business" type="hidden" value="deutschland@reactos.org" />
+    <input name="cmd" type="hidden" value="_xclick-subscriptions" />
+    <input type="hidden" name="src" value="1"/>
+    <input type="hidden" name="srt" value="24"/>
+    <input type="hidden" name="p3" value="1"/>
+    <input type="hidden" name="t3" value="M"/>
+    <input type="hidden" name="no_note" value="1"/>
+    <input type="hidden" name="no_shipping" value="2"/>
+    <input type="hidden" name="notify_url" value="https://reactos.org/paypal/payment/ipn"/>
+    <input type="hidden" name="return" value="https://reactos.org/donation/thank-you"/>
+    <input name="item_name" type="hidden" value="ReactOS Monthly Donation" />
+    <div class="row column">
+
+		<div class="col-md-8">
+      <input id="pre_recurr_0" type="checkbox" class="donation-amount donation-single" value="5" /> <label for="pre_recurr_0"><span>€5</span> </label><input id="pre_recurr_1" type="checkbox" class="donation-amount donation-single" value="10" /> <label for="pre_recurr_1"><span>€10</span> </label><input id="pre_recurr_2" type="checkbox" class="donation-amount donation-single" value="15" /> <label for="pre_recurr_2"><span>€15</span> </label>                <label class="dollar">€</label><input name="other" size="4" type="text" value="" class="other" />
+      		</div>
+	     <div class="col-md-4"><button href="#" class="donation-submit-button btn-lg btn-primary">Donate now</button>  <input type="hidden" value="" name="a3" class="amount-holder"/> </div>
+    </div>
+    <input name="currency_code" type="hidden" value="EUR" /><br />
+  </div>
+</form>  </div>
+</div>
+</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="#collapse2Two">...Or just once!</a></h4>
+								</div>
+								<div class="accordion-body collapse" id="collapse2Two">
+									<div class="panel-body"><div id="block-paypal-donations-paypal-donations-single" class="block block-paypal-donations">
+
+    
+  <div class="content">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="single-donation-form donation-form">
+  <div class="inner_content">
+   
+    <input type="hidden" name="lc" value="US" />
+
+    <input name="landing_page" type="hidden" value="billing" />
+    <input name="cpp_cart_border_color" type="hidden" value="FF0000" />
+        <input name="cpp_payflow_color" type="hidden" value="D20137" />
+    <input name="business" type="hidden" value="deutschland@reactos.org" />
+    <input name="cmd" type="hidden" value="_donations" />
+    <input type="hidden" name="notify_url" value="">
+    <input type="hidden" name="return" value=""/>
+    <input name="item_name" type="hidden" value="ReactOS One-Time Donation" />
+    <div class="row column">
+
+        <div class="col-md-8">
+      <input id="pre_single_0" type="checkbox" class="donation-amount donation-single" value="5" /> <label for="pre_single_0"><span>€5</span></label><input id="pre_single_1" type="checkbox" class="donation-amount donation-single" value="10" /> <label for="pre_single_1"><span>€10</span></label><input id="pre_single_2" type="checkbox" class="donation-amount donation-single" value="15" /> <label for="pre_single_2"><span>€15</span></label>                <label class="dollar">€</label><input name="other" size="4" type="text" value="" class="other" />
+      		</div>
+		<div class="col-md-4"><button href="#" class="donation-submit-button btn-lg btn-primary">Donate now</button> <input type="hidden" value="" name="amount" class="amount-holder"/></div>
+    </div>
+    <input name="currency_code" type="hidden" value="EUR" /><br />
+  </div>
+</form>
+  </div>
+</div>
+</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="center">
+							<div class="circular-bar blue"><input class="knob" data-bgcolor="#FAFAFA" data-displayinput="false" data-fgcolor="#0088CC" data-linecap="round" data-readonly="true" data-thickness=".2" value="1">
+								<div class="circular-bar-content"><strong>Fundraising</strong> <label>1%</label></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="blocktestimonial">
+						<blockquote class="testimonial">
+							<h2>Did you know?</h2>
+							<p>If just 1 in 10 people downloading ReactOS would donate less than the cost of a beer each month, we'd be able to hire 10 full time developers.</p>
+							<p>ReactOS has never had the funds to hire a full time dev, but imagine how much quicker we could reach beta if we did. Please, be that 1 in 10 and help us to boost development.</p>
+						</blockquote>
+						<div class="testimonial-arrow-down" style="margin-left: 80%;">&nbsp;</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer"><a href="http://sourceforge.net/projects/reactos/files/ReactOS/0.4.0/ReactOS-0.4.0-iso.zip/download" style="font-size: 16px;">No, thanks. Let's proceed with the download! </a></div>
+		</div>
+	</div>
+</div>
+            
+            
+            
             </div>
         </div>        
         {% include footer.html %}
