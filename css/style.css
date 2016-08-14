@@ -378,7 +378,7 @@ img {
     }
     .drawer {
         width: 300px;
-        max-width: 95%;
+        max-width: calc(100% - 40px);
         min-height: 100%;
         position: fixed;
         background: #FAFAFA;
@@ -401,6 +401,7 @@ img {
         bottom: 0;
         left: 0;
         right: 0;
+        cursor: default;
     }
     .navbar-nav {
       margin: 0;
