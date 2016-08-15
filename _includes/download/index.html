@@ -44,27 +44,50 @@
                 
                     
                                         <div class="content">
-                                           <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="single-donation-form donation-form">
+                                            <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml" target="_blank" class="single-donation-form donation-form">
                                                 <div class="inner_content">
-                                                    <input type="hidden" name="lc" value="US" />
-                                                    <input name="landing_page" type="hidden" value="billing" />
-                                                    <input name="cpp_cart_border_color" type="hidden" value="FF0000" />
-                                                    <input name="cpp_payflow_color" type="hidden" value="D20137" />
-                                                    <input name="business" type="hidden" value="deutschland@reactos.org" />
-                                                    <input name="cmd" type="hidden" value="_donations" />
-                                                    <input type="hidden" name="notify_url" value="">
-                                                    <input type="hidden" name="return" value=""/>
-                                                    <input name="item_name" type="hidden" value="ReactOS One-Time Donation" />
-                                                    <div class="row column">
-                                                        <div class="col-md-8">
-                                                            <input id="pre_single_0" type="checkbox" class="donation-amount donation-single" value="5" /> <label for="pre_single_0"><span>€5</span></label><input id="pre_single_1" type="checkbox" class="donation-amount donation-single" value="10" /> <label for="pre_single_1"><span>€10</span></label><input id="pre_single_2" type="checkbox" class="donation-amount donation-single" value="15" /> <label for="pre_single_2"><span>€15</span></label>                <label class="dollar">€</label><input name="other" size="4" type="text" value="" class="other" />
+                                                    <input type="hidden" name="receiver" value="41001604541993">
+                                                    <input type="hidden" name="formcomment" value="GreenteaOS team">
+                                                    <input type="hidden" name="short-dest" value="поддержка GreenteaOS">
+                                                    <input type="hidden" name="quickpay-form" value="donate">
+                                                    <input type="hidden" name="targets" value="на развитие проекта GreenteaOS">
+                                                    
+                                                    <input type="hidden" name="need-fio" value="false">
+                                                    <input type="hidden" name="need-email" value="false">
+                                                    <input type="hidden" name="need-phone" value="false">
+                                                    <input type="hidden" name="need-address" value="false">
+                                                    <div class="col-md-8">
+                                                        <div style="position: relative;display: inline-block;">
+                                                            <div class="payment-options col-md-12">
+                                                                <h4 style="text-align: left;">Сумма</h4>
+                                                                <input id="sum-1" class="payment-options_control visually-hidden" type="radio" name="sum" value="1000" data-type="number"><label class="btn btn-primary payment-option" for="sum-1">1000</label>
+                                                                <input id="sum-2" class="payment-options_control visually-hidden" type="radio" name="sum" value="500" data-type="number"><label class="btn btn-primary payment-option" for="sum-2">500</label>
+                                                                <input id="sum-3" class="payment-options_control visually-hidden" type="radio" name="sum" value="100" data-type="number" checked>
+                                                                <label class="btn btn-primary payment-option" for="sum-3">
+                                                                    <input type="text" value="100" onkeyup="document.getElementById('sum-3').value = this.value;" onfocus="document.getElementById('sum-3').checked=true;this.focus();" pattern="\d+([,.]\d{1,2})?"
+                                                                        style="border: 0;
+                                                                        height: 1em;
+                                                                        background: 0;
+                                                                        border-bottom: 1px solid #DEDEDE;
+                                                                        width: 5em;
+                                                                        outline: none;
+                                                                        text-align: center;">
+                                                                </label>
+                                                            </div>
+                                                            <br>
+                                                            <div class="payment-options col-md-12">
+                                                                <h4 style="text-align: left;">Способ оплаты</h4>
+                                                                <input id="paymentType-1" class="payment-options_control visually-hidden" type="radio" name="paymentType" value="PC"><label for="paymentType-1" class="btn btn-primary payment-option"><img src="https://money.yandex.ru/i/quickpay-widget__yamoney.png" alt="yandex money"></label>
+                                                                <input id="paymentType-2" class="payment-options_control visually-hidden" type="radio" name="paymentType" value="MC"><label for="paymentType-2" class="btn btn-primary payment-option"><img src="https://money.yandex.ru/i/quickpay-widget__mobile.png" alt="mobile"></label>
+                                                                <input id="paymentType-3" class="payment-options_control visually-hidden" type="radio" name="paymentType" value="AC" checked><label for="paymentType-3" class="btn btn-primary payment-option"><img src="https://money.yandex.ru/i/quickpay-widget__any-card.png" alt="card"></label>
+                                                            </div>
                                                         </div>
-                                                        <div class="col-md-4"><button href="#" class="donation-submit-button btn-lg btn-primary">Donate now</button> <input type="hidden" value="" name="amount" class="amount-holder"/></div>
                                                     </div>
-                                                    <input name="currency_code" type="hidden" value="EUR" /><br /> 
+                                                    <div class="col-md-12">
+                                                        <button type="submit" class="donation-submit-button btn-lg btn-primary" style="float: right;margin-top: 1em;">Перевести</button>
+                                                    </div>
                                                 </div>
-                                            </form>-->
-                                            <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/donate.xml?account=41001604541993&quickpay=donate&payment-type-choice=on&default-sum=100&targets=PeyTy%60s+Open+Source+Projects&target-visibility=on&project-name=OSGreenTea&project-site=https%3A%2F%2Fosgreentea.github.io&button-text=01&comment=on&hint=Wishes%3F&successURL=http%3A%2F%2Fosgreentea.github.io%2Fthanks.html" width="521" height="204"></iframe>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
