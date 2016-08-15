@@ -457,5 +457,43 @@ mark {
 .app-icon {
     width: 48px;
     height: 48px;
-}    
+}
+.payment-options {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.payment-options_control:checked + .payment-option {
+    background-color: #286090;
+    border-color: #204d74;    
+}
+.payment-options > .payment-option {
+    border-radius: 0;
+    float: left;
+}
+.payment-options > .payment-option:first-of-type {
+    border-radius: 4px 0 0 4px;
+}
+.payment-options > .payment-option:last-of-type {
+    border-radius: 0 4px 4px 0;
+}
+.visually-hidden {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+@media (max-width: 767px) {
+    .payment-option {
+        width: 100%;
+    }
+    .payment-options > .payment-option:first-of-type {
+        border-radius: 4px 4px 0 0;
+    }
+    .payment-options > .payment-option:last-of-type {
+        border-radius: 0 0 4px 4px;
+    }
+}
 {% include backcode.css %}
