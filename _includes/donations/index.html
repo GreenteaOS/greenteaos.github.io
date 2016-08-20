@@ -1,20 +1,11 @@
+{% capture title %}{% include localise.html string="header_donate-us" %}{% endcapture %}
+
 {% assign ref = "donations" %}
-<html>
-    <head>
-      <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Download - GreenTeaOS</title>
-        <meta name="author" content="GreenTea OS">
-        
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,700'>
-        <link rel="stylesheet" href="/css/bootstrap.css">
-        
-        <link rel="stylesheet" href="/css/style.css">
-        <script src="/js/jquery-1.11.1.js"></script>
-         <script src="/js/bootstrap.js"></script>
-    </head>
-    
+
+{% include head-start.html %}
+
+{% include head-end.html %}
+
     <body>
         {% include header.html %}
         <div class="row">

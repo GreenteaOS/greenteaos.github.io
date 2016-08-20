@@ -1,51 +1,8 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: "en" }}">
-
-    <head>
-        {% include redirect.js available = "'ru':true,'it':true" %}
-        <script>
-            {% include font-caching.js %}
-            {% if page.lang == "ru" %}
-                loadFont("Roboto", "/css/cyrillic Roboto woff.css", "/css/cyrillic Roboto woff2.css");
-            {% endif %}
-            loadFont("Roboto", "/css/latin Roboto woff.css", "/css/latin Roboto woff2.css");
-        </script>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{% include localise.html string="title"  %}</title>
-        <meta name="author" content="Greentea OS">
-        <meta name="theme-color" content="#24c12e">
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="/images/favicon-16px.png" type="image/png" sizes="16x16">
-        <link rel="icon" href="/images/favicon-32px.png" type="image/png" sizes="32x32">
-        <link rel="icon" href="/images/favicon-96px.png" type="image/png" sizes="96x96">
-        <!-- Twitter card -->
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@osgreentea" />
-        <meta name="twitter:creator" content="Greentea OS Team" /> 
-        <meta name="twitter:title" content="Greentea OS" /> 
-        <meta name="twitter:description" content="Greentea OS is a fork of ReactOS, a free Windows-compatible Operating System written from scratch, but more user and production oriented. We would first make it *actually* usable for day-to-day use." /> 
-        <meta name="twitter:image" content="https://osgreentea.github.io/images/opengraph.png" /> 
-        <!-- Open graph -->
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Greentea OS" />
-        <meta property="og:description" content="Greentea OS is a fork of ReactOS, a free Windows-compatible Operating System written from scratch, but more user and production oriented (than ReactOS itself). We would first make it *actually* usable for day-to-day use." />
-        <meta property="og:url" content="https://osgreentea.github.io" />
-        <meta property="og:image" content="https://osgreentea.github.io/images/opengraph.png" />
+{% assign theme-color = "#24c12e" %}
+{% include head-start.html %}
         <!-- Yandex -->
         <meta name="yandex-verification" content="32056ab36613b18e" />
-        <!-- CSS -->
-        <noscript>
-            {% if page.lang == "ru" %}
-                <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
-            {% else %}
-                <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-            {% endif %}
-        </noscript>
-        <!--<link rel="stylesheet" href="/css/bootstrap.css">-->
-        <link rel="stylesheet" href="/css/style.css">
-    </head>
+{% include head-end.html %}
 
     <body>
 

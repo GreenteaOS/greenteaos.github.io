@@ -1,0 +1,37 @@
+<!-- Begin Jekyll SEO tag 9000 v0.0.1 -->
+
+{% if title %}
+    <title>{{ title | append: " - " | append: site.title }}</title>
+{% else %}
+    <title>{{ site.title }}</title>
+{% endif %}
+
+<!-- Twitter card -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="{{ twitter | default: site.twitter }}" />
+<meta name="twitter:creator" content="{{ author | default: site.author }}" />
+{% if title %}
+    <meta name="twitter:title" content="{{ title | append: " - " | append: site.title }}" />
+{% else %}
+    <meta name="twitter:title" content="{{ site.title }}" /> 
+{% endif %}
+<meta name="twitter:description" content="{{ description | default: site.description }}" /> 
+<meta name="twitter:image" content="{{ image | default: site.image }}" /> 
+<!-- Open graph -->
+<meta property="og:type" content="website" />
+{% if title %}
+    <meta property="og:title" content="{{ title | append: " - " | append: site.title }}" />
+{% else %}
+    <meta property="og:title" content="{{ site.title }}" /> 
+{% endif %}
+<meta property="og:description" content="{{ description | default: site.description }}" />
+<meta property="og:url" content="{{ url | default: site.url }}" />
+<meta property="og:image" content="{{ image | default: site.image }}" />
+
+<meta name="author" content="{{ author | default: site.author }}">
+<meta name="theme-color" content="{{ theme-color | default: site.theme-color }}">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/images/favicon-16px.png" type="image/png" sizes="16x16">
+<link rel="icon" href="/images/favicon-32px.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/images/favicon-96px.png" type="image/png" sizes="96x96">
+<!-- End Jekyll SEO tag 9000 -->
