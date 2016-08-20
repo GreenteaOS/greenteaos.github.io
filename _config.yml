@@ -1,5 +1,6 @@
 # Site settings
 
+available: "'ru':true,'it':true"
 
 # Build settings
 markdown: kramdown
