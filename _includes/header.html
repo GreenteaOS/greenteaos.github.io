@@ -29,6 +29,9 @@
                     <li>
                         <a href="{% include lurl %}about/"{% if ref == "about-us" %}class="navbar-nav__link_current"{% endif %}>{% include localise.html string="header_about-us" %}</a>
                     </li>
+                    <li>
+                        <a href="https://github.com/OSGreentea">GitHub</a>
+                    </li>
                 </ul>
             </div>
             <a class="drawer-fade" href="#0" onclick="document.getElementById('drawer').className = document.getElementById('drawer').className.replace(new RegExp('(\\s|^)'+'drawer_expanded'+'(\\s|$)'), ' '); event.preventDefault();"></a>
