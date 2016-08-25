@@ -8,35 +8,22 @@
             <div id="drawer" class="drawer">
                 <ul class="nav navbar-nav navbar-right navbar-uppercase">
                     <li>
-                        <a href="{% include lurl %}apps/"{% if ref == "apps" %}class="navbar-nav__link_current"{% endif %}>Apps</a>
+                        <a href="{% include lurl %}apps/"{% if ref == "apps" %}class="navbar-nav__link_current"{% endif %}>{% include localise.html string="header_apps" %}</a>
                     </li>
                     <li>
-                        <a href="{% include lurl %}games/"{% if ref == "games" %}class="navbar-nav__link_current"{% endif %}>Games</a>
+                        <a href="{% include lurl %}games/"{% if ref == "games" %}class="navbar-nav__link_current"{% endif %}>{% include localise.html string="header_games" %}</a>
                     </li>
                     <li>
-                        <a href="{% include lurl %}privacy/"{% if ref == "privacy" %}class="navbar-nav__link_current"{% endif %}>Privacy</a>
+                        <a href="{% include lurl %}privacy/"{% if ref == "privacy" %}class="navbar-nav__link_current"{% endif %}>{% include localise.html string="header_privacy" %}</a>
                     </li>
-                    <!--<li>
-                        <a href="{% include lurl %}home/"{% if ref == "home" %}class="navbar-nav__link_current"{% endif %}>{% include localise.html string="header_home" %}</a>
-                    </li>-->
                     <li>
                         <a href="{% include lurl %}donations/" {% if ref == "donations" %}class="navbar-nav__link_current"{% endif %}>{% include localise.html string="header_donate-us" %}</a>
                     </li>
                     <li>
                         <a href="{% include lurl %}download/"{% if ref == "download" %}class="navbar-nav__link_current"{% endif %}>{% include localise.html string="header_download" %}</a>    
                     </li>
-                    <!--<li>
-                        <a href="https://github.com/OSGreentea/Greentea">{% include localise.html string="header_developer" %}</a>    
-                    </li>-->
-                    <!--<li>
-                        {% if page.lang == "ru" %}
-                            <a href="https://github.com/OSGreentea/Greentea/blob/master/russian/README.md">{% include localise.html string="header_wiki" %}</a>
-                        {% else %}
-                            <a href="https://github.com/OSGreentea/Greentea/blob/master/english/README.md">{% include localise.html string="header_wiki" %}</a>
-                        {% endif %}
-                    </li>-->
                     <li>
-                        <a href="{% include lurl %}support/"{% if ref == "support" %}class="navbar-nav__link_current"{% endif %}>Support<!--{% include localise.html string="header_about-us" %}--></a>
+                        <a href="{% include lurl %}support/"{% if ref == "support" %}class="navbar-nav__link_current"{% endif %}>{% include localise.html string="header_support" %}</a>
                     </li>
                     <li>
                         <a href="https://github.com/OSGreentea/Greentea">GitHub</a>
