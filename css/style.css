@@ -4,6 +4,9 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
+body {
+  padding-bottom: 7.5em;
+}
 html,
 body {
   min-height: 100%;
