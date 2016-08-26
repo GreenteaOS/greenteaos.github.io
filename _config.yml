@@ -6,11 +6,11 @@ available: "'ru':true,'it':true"
 # SEO related
 
 title: "Greentea OS"
-twitter: "@osgreentea"
+twitter: "@greenteaos"
 author: "Greentea OS Team"
 description: "Greentea OS is a fork of ReactOS, a free Windows-compatible Operating System written from scratch, but more user and production oriented. We would first make it *actually* usable for day-to-day use."
-image: "https://osgreentea.github.io/images/opengraph.png"
-url: "https://osgreentea.github.io"
+image: "https://greenteaos.github.io/images/opengraph.png"
+url: "https://greenteaos.github.io"
 theme-color: "#f8f8f8"
 
 # Build settings
