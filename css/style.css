@@ -332,6 +332,12 @@ img {
     text-align: center;
     margin-top: 2em;
 }
+.footer_copyright {
+    text-align: right;
+}
+.footer_social {
+    margin-top: 1.5em;
+}
 .footer_social-link {
     height: 1.3em;
     width: 1.3em;
@@ -339,8 +345,16 @@ img {
     vertical-align: text-bottom;
     overflow: hidden;
 }
-.footer_social-link:first-child {
-    margin-left: 3em;
+@media (max-width: 767px) {
+    .footer_social-link {
+        height: 36px;
+        width: 36px;
+    }
+    .footer_copyright,
+    .footer_social {
+        text-align: center;
+        margin-top: .5em;
+    }
 }
 .footer_social-link img {
     vertical-align: inherit; /* antibootstrap */
