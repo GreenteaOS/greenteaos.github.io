@@ -343,7 +343,6 @@ img {
     width: 1.3em;
     display: inline-block;
     vertical-align: text-bottom;
-    overflow: hidden;
 }
 @media (max-width: 767px) {
     .footer_social-link {
