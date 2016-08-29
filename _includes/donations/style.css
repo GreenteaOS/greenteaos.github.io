@@ -1,0 +1,12 @@
+.own-value-input {
+  float: left;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  max-width: 70%;
+}
+.own-value-submit {
+  float: left;
+  border-radius: 0 6px 6px 0;
+  max-width: 30%;
+}
