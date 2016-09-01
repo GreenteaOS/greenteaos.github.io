@@ -5,7 +5,8 @@ html {
       -ms-text-size-adjust: 100%;
 }
 body {
-  padding-bottom: 7.5em;
+  display: flex;
+  flex-direction: column;
 }
 html,
 body {
@@ -15,12 +16,8 @@ body {
   right: 0;
   overflow-x: hidden;
 }
-footer {
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.content {
+  flex: 1;
 }
 a {
   background-color: transparent;
