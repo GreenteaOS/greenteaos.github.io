@@ -19,5 +19,6 @@
     "header_github": "Github",
 
     "footer_made-by": "Сайт создан командой Greentea OS, и сообществом. <a href='https://ru.wikipedia.org/wiki/Зелёный_чай'>Зелёный чай</a> — как кофе, <a href='https://github.com/GreenteaOS/Kernel'>Greentea</a> — как ОС. Greentea OS — тоже неплохо&nbsp;:)",
-    "footer_team": "Команда Greentea OS"
+    "footer_team": "Команда Greentea OS",
+    "footer_social-networks": "Социальные сети"
 }
