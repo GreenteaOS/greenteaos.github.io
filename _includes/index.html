@@ -5,51 +5,52 @@
 {% include head-end.html %}
 
     <body>
-
-        <!-- Coming Soon -->
-        <div class="coming-soon">
-            <div class="backcode-wrap">
-                <div class="backcode noselect">
-                    {% highlight c#  linenos%}
-                        {% include backcode.cpp %}
-                    {% endhighlight %}
+        <div class="content">
+            <!-- Coming Soon -->
+            <div class="coming-soon">
+                <div class="backcode-wrap">
+                    <div class="backcode noselect">
+                        {% highlight c#  linenos%}
+                            {% include backcode.cpp %}
+                        {% endhighlight %}
+                    </div>
+                    <div class="backcode noselect">
+                        {% highlight c#  linenos%}
+                            {% include backcode.cpp %}
+                        {% endhighlight %}
+                    </div>
                 </div>
-                <div class="backcode noselect">
-                    {% highlight c#  linenos%}
-                        {% include backcode.cpp %}
-                    {% endhighlight %}
-                </div>
-            </div>
-            <div class="inner-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 col-xs-12 col-md-12">
-                            <img src="/images/logo.png" alt="Logo of Greentea OS" width="250" height="250">
-                            <h2>{% include localise.html string="were-coming-soon" %}</h2>
-                            <div class="coming-soon__paragraph-wrap">
-                                <p id="m">{% include localise.html string="coming-soon_we-are-working" %}</p>
+                <div class="inner-bg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12 col-md-12">
+                                <img src="/images/logo.png" alt="Logo of Greentea OS" width="250" height="250">
+                                <h2>{% include localise.html string="were-coming-soon" %}</h2>
+                                <div class="coming-soon__paragraph-wrap">
+                                    <p id="m">{% include localise.html string="coming-soon_we-are-working" %}</p>
+                                </div>
+                                <a href='https://github.com/GreenteaOS/Greentea/issues' class="bt btn-default">{% include localise.html string="become-a-dev" %}</a>
+                                <div class="coming-soon__paragraph-wrap">
+                                    <p>{% include localise.html string="coming-soon_or" %}</p>
+                                </div>
+                                <a href='https://github.com/GreenteaOS/Greentea/blob/master/README.md' class="bt btn-default">
+                                    {% include localise.html string="see-our-wiki" %}</a>
                             </div>
-                            <a href='https://github.com/GreenteaOS/Greentea/issues' class="bt btn-default">{% include localise.html string="become-a-dev" %}</a>
-                            <div class="coming-soon__paragraph-wrap">
-                                <p>{% include localise.html string="coming-soon_or" %}</p>
-                            </div>
-                            <a href='https://github.com/GreenteaOS/Greentea/blob/master/README.md' class="bt btn-default">
-                                {% include localise.html string="see-our-wiki" %}</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Content -->
-        <div class="container">
-            <div class="row">
-                <div class="twitter-wrap">
-                    <a class="twitter-timeline" data-link-color="#e75967" href="https://twitter.com/greenteaos">Tweets by greenteaos</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-                <div class="about-us-wrap">
-                    <h1>{% include localise.html string="about-us_header" %}</h1>
-                    <p>{% include localise.html string="about-us" %}</p>
+    
+            <!-- Content -->
+            <div class="container">
+                <div class="row">
+                    <div class="twitter-wrap">
+                        <a class="twitter-timeline" data-link-color="#e75967" href="https://twitter.com/greenteaos">Tweets by greenteaos</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <div class="about-us-wrap">
+                        <h1>{% include localise.html string="about-us_header" %}</h1>
+                        <p>{% include localise.html string="about-us" %}</p>
+                    </div>
                 </div>
             </div>
         </div>
