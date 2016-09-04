@@ -1,15 +1,36 @@
 <footer class="footer">
     <div class="container">
         <p class="text-muted small footer__text">{% include localise.html string="footer_made-by" %}</p>
-        <p class="col-md-6 col-sd-12 footer_copyright text-muted small footer__text">{% include localise.html string="footer_copyright" %} {% include localise.html string="footer_team" %}</p>
-        <nav class="col-md-6 col-sd-12 footer_social">
+        <p class="col-md-4 col-sd-12 footer_copyright text-muted small footer__text">{% include localise.html string="footer_copyright" %} {% include localise.html string="footer_team" %}</p>
+
+        <div style="position: relative; height: 16px; margin-top: 2em;" class="col-md-4 col-sd-12 small">
+            <button class="footer_lang-activator">Language</button>
+            <div class="footer_lang-popup">
+              <ul>
+                  {% if page.lang %}
+                    <li><a href="{{ page.url | replace_first: page.lang, "" | replace_first: "/", "" }}" onclick="localStorage.preferredLanguage='en'">English</a></li>
+                  {% else %}
+                    <li><a href="{{ page.url }}" onclick="localStorage.preferredLanguage='en'">English</a></li>
+                  {% endif %}
+                {% assign languages = site.available | split: ", " %}
+
+                {% for lang in languages %}
+                  {% if page.lang %}
+                    <li><a href="{{ page.url | replace_first: page.lang, lang }}" onclick="localStorage.preferredLanguage='{{ lang }}'">{{ site.data[lang].language }}</a></li>
+                  {% else %}
+                    <li><a href="{{ page.url | prepend: lang | prepend: "/" }}" onclick="localStorage.preferredLanguage='{{ lang }}'">{{ site.data[lang].language }}</a></li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+        </div>
+        <nav class="col-md-4 col-sd-12 footer_social">
           <a class="footer_social-link" href="https://www.facebook.com/OSGreentea/"><img aria-hidden=”true” src="/images/social/facebook.svg"><span class="visually-hidden">our page on facebook</span></a>
           <a class="footer_social-link" href="https://twitter.com/greenteaos"><img aria-hidden=”true” src="/images/social/twitter.svg"><span class="visually-hidden">our page on twitter</span></a>
           <a class="footer_social-link" href="https://vk.com/greenteaos"><img aria-hidden=”true” src="/images/social/vk.svg"><span class="visually-hidden">our page on vk.com</span></a>
           <a class="footer_social-link" href="https://github.com/GreenteaOS"><img aria-hidden=”true” src="/images/social/github.svg"><span class="visually-hidden">our organization on github</span></a>
           <a class="footer_social-link" href="https://telegram.me/greentea_ru"><img aria-hidden=”true” src="/images/social/telegram.svg"><span class="visually-hidden">our group in telegram</span></a>
         </nav>
-        
     </div>
 </footer>
 <!-- Piwik -->
