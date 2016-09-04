@@ -1,7 +1,7 @@
 # Site settings
 
 baseurl: ""
-available: "'ru':true,'it':true"
+available: "ru, it"
 
 # SEO related
 
