@@ -129,17 +129,17 @@ img {
 }
 
 .section {
-padding: 160px 0;
+    padding: 160px 0;
     position: relative;
     display: block;
-    z-index: 10;
+    /*z-index: 10;  TODO: remove if there is no dependencies on this */
     overflow: hidden;
     margin: 0;
 }
     
 mark {
-  background-color: #10b715;
-  color: #fff;
+    background-color: #10b715;
+    color: #fff;
 }    
 
 .carousel-inner {
