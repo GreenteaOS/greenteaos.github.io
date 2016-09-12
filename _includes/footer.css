@@ -27,6 +27,9 @@
         text-align: center;
         margin-top: .5em;
     }
+    .footer_lang-switch {
+      font-size: 16px;
+    }
 }
 .footer_social-link img {
     vertical-align: inherit; /* antibootstrap */
@@ -38,6 +41,7 @@
   height:0;
   overflow:hidden;
   background: #f8f8f8;
+  font-size: inherit;
 }
 .footer_lang-popup > ul {
   position:absolute;
@@ -56,6 +60,7 @@
   position: absolute;
   bottom: -.5em;
   padding: .5em;
+  font-size: inherit;
 }
 {% assign languages = site.available | split: ", " %}
 {% assign languages = languages | size | plus: 1 %}
