@@ -71,144 +71,17 @@ img {
 }
 
 /***** Coming Soon *****/
-
-.coming-soon {
-    margin: 0 auto;
-    text-align: center;
-    color: #fff;
-    background: #272822;
-    position:relative;
-    overflow:hidden;
-}
-
-.coming-soon h1 {
-    color: aqua;
-}
-
-.inner-bg {
-    padding: 55px 0 60px;
-  
-    -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
-    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
-    box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
-}
-
-.coming-soon h2 {
-    font-size: 40px;
-    line-height: 44px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-shadow: 0 1px 27px rgba(0, 0, 0, 0.5);
-}
-
-.coming-soon p {
-    margin: 0;
-    font-size: 18px;
-    line-height: 36px;
-    display: inline-block;
-    background: rgba(39, 40, 34,0.6);
-}
-
-.coming-soon__paragraph-wrap {
-    margin: 20px 0 10px;
-}
-
-
+{% include coming-soon.css %}
 
 /***** Content *****/
+{% include twitter.css %}
 
-@media (max-width: 991px) {
-    .twitter-wrap,
-    .about-us-wrap {
-        width: 100%;
-    }
-}
-@media (min-width: 992px) {
-    .twitter-wrap,
-    .about-us-wrap {
-        width: 50%;
-    }
-}
-.twitter-wrap,
-.about-us-wrap {
-    padding: 0 15px;
-    float: left;
-}
-
-
+/***** Header *****/
+{% include header.css %}
 
 /***** Footer *****/
+{% include footer.css %}
 
-.footer__text {
-    text-align: center;
-    margin-top: 2em;
-}
-.footer_copyright {
-    text-align: left;
-}
-.footer_social {
-    text-align: right;
-}
-.footer_social {
-    margin-top: 1.5em;
-}
-.footer_social-link {
-    height: 1.3em;
-    width: 1.3em;
-    display: inline-block;
-    vertical-align: text-bottom;
-}
-@media (max-width: 767px) {
-    .footer_social-link {
-        height: 36px;
-        width: 36px;
-    }
-    .footer_copyright,
-    .footer_social {
-        text-align: center;
-        margin-top: .5em;
-    }
-}
-.footer_social-link img {
-    vertical-align: inherit; /* antibootstrap */
-}
-.footer_lang-popup {
-  position: absolute;
-  bottom:1.7em;
-  width:6em;
-  height:0;
-  overflow:hidden;
-  background: #f8f8f8;
-}
-.footer_lang-popup > ul {
-  position:absolute;
-  bottom:0;
-  list-style: none;
-  padding-left:0;
-  margin:0;
-}
-.footer_lang-popup > ul > li > a {
-  padding: 3px 10px;
-  display: block;
-}
-.footer_lang-activator {
-  background: 0;
-  border: 0;
-  position: absolute;
-  bottom: -.5em;
-  padding: .5em;
-}
-{% assign languages = site.available | split: ", " %}
-{% assign languages = languages | size | plus: 1 %}
-
-.footer_lang-popup.has-focus,
-.footer_lang-popup:hover,
-.footer_lang-activator:active + .footer_lang-popup,
-.footer_lang-activator:hover + .footer_lang-popup,
-.footer_lang-activator:focus + .footer_lang-popup {
-  height:calc({{ languages | times: 1.38 }}em + {{ 6 | times: languages }}px);
-  box-shadow: 1px 1px 2px 3px rgba(0,0,0,.2);
-}
 
 /***** Media Queries *****/
 
@@ -239,64 +112,6 @@ img {
           user-select: none;
 }
 
-/* Navbar brand */
-.navbar-brand {
-    padding: 10px;
-}
-.navbar-brand > img {
-    max-height: 100%;
-    height: 100%;
-    object-fit: contain;
-    width: auto;
-    margin: 0 auto;
-}
-.navbar-nav__link_current {
-    pointer-events: none;
-    color: #252525 !important;
-}
-.expand-drawer,
-.drawer-fade {
-    display: none;
-}
-@media (max-width: 767px) {
-    .expand-drawer {
-        display: block;
-        height: 50px;
-        width: 50px;
-        float: right;
-        background: url(/images/menu_24px.svg) center no-repeat;
-    }
-    .drawer {
-        width: 300px;
-        max-width: calc(100% - 40px);
-        min-height: 100%;
-        position: fixed;
-        background: #FAFAFA;
-        top: 0;
-        right: -300px;
-        transition-property: right;
-        transition: .2s;
-        z-index: 1;
-    }
-    .drawer:target,
-    .drawer_expanded {
-        right: 0;
-    }
-    .drawer:target + .drawer-fade,
-    .drawer_expanded + .drawer-fade {
-        display: block;
-        background: rgba(0,0,0,0.5);
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        cursor: default;
-    }
-    .navbar-nav {
-      margin: 0;
-    }
-}
 .feature-box-icon {
   background: #CCC;
     border-radius: 35px;
