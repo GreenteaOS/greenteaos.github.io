@@ -200,6 +200,8 @@ img {
 }
 {% assign languages = site.available | split: ", " %}
 {% assign languages = languages | size | plus: 1 %}
+
+.footer_lang-popup.has-focus,
 .footer_lang-popup:hover,
 .footer_lang-activator:active + .footer_lang-popup,
 .footer_lang-activator:hover + .footer_lang-popup,
