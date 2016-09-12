@@ -35,13 +35,11 @@
     vertical-align: inherit; /* antibootstrap */
 }
 .footer_lang-popup {
-  position: absolute;
   bottom:1.7em;
   width:6em;
   height:0;
   overflow:hidden;
   background: #f8f8f8;
-  font-size: inherit;
 }
 .footer_lang-popup > ul {
   position:absolute;
@@ -57,10 +55,15 @@
 .footer_lang-activator {
   background: 0;
   border: 0;
-  position: absolute;
   bottom: -.5em;
   padding: .5em;
-  font-size: inherit;
+}
+.footer_lang-popup,
+.footer_lang-activator {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    font-size: inherit;
 }
 {% assign languages = site.available | split: ", " %}
 {% assign languages = languages | size | plus: 1 %}
