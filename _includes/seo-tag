@@ -40,5 +40,6 @@
 <link rel="mask-icon" href="{{ site.baseurl }}/safari-pinned-tab.svg" color="#528a3f">
 <meta name="msapplication-TileColor" content="#528a3f">
 <meta name="msapplication-TileImage" content="{{ site.baseurl }}/mstile-144x144.png">
+<meta name="viewport" content="ya-title={{ theme-color | default: site.theme-color }},ya-dock={{ theme-color | default: site.theme-color }}">
 <meta name="theme-color" content="{{ theme-color | default: site.theme-color }}">
 <!-- End Jekyll SEO tag 9000 -->
