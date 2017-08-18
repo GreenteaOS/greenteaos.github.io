@@ -1,6 +1,6 @@
 {
     "language": "Italiano",
-	
+
 	"title": "Greentea OS",
 	"were-coming-soon": "Prossimamente",
 
@@ -10,7 +10,7 @@
 	"see-our-wiki": "Guarda la nostra wiki",
 
 	"about-us_header": "Su di noi",
-	"about-us": "Greentea OS è un fork di <a href='https://reactos.org'>ReactOS</a>, un sistema operativo gratuito compatibile con windows, scritto da zero, ma più orientato sull'utente e la produzione (anche ReactOS). Noi vorremmo farlo *attualmente* utilizzabile tutti i giorni.",
+	"about-us": "Greentea OS è un sistema operativo gratuito compatibile con windows, scritto da zero, ma più orientato sull'utente e la produzione. Noi vorremmo farlo *attualmente* utilizzabile tutti i giorni.",
 
 "header_home": "Home",
 	"header_download": "Scarica",
