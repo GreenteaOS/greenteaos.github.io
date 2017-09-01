@@ -7,7 +7,7 @@
     "coming-soon_we-are-working": "We are working very hard on the new version of our site. It will bring a lot of new features. Stay tuned!",
     "coming-soon_or": "or",
     "become-a-dev": "Become a DEV",
-    "see-our-wiki": "See our wiki",
+    "see-our-wiki": "See our WIKI",
 
     "about-us_header": "About",
     "about-us": "Greentea OS is a free Windows-compatible operating system, written from scratch, but more user and production oriented. We would first make it *actually* usable for day-to-day use.",
@@ -26,6 +26,6 @@
     "footer_social-networks": "Social Networks",
     
     "google-drive": "Download from Google Drive",
-    "torrent": "Download from Torrent",
-    "relase-notes" : "See Our Release Notes"
+    "torrent": "Download with Torrent",
+    "relase-notes" : "See our Release Notes"
 }
