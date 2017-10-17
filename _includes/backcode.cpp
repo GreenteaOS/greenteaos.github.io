@@ -18,12 +18,12 @@
 //#include "randomcode.h"
 #include "AboutView.h"
 #include "MainFrm.h"
- 
+
 #include "aboutdlg.h"
 
 LRESULT CAboutDlg::OnInitDialog(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/)
 {
-   TCHAR cpr[] = _T("(c) Copyright 2016");
+   TCHAR cpr[] = _T("(c) Copyright 2017");
    CString desc;
 
    CenterWindow(GetParent());
@@ -34,5 +34,5 @@ LRESULT CAboutDlg::OnInitDialog(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lPara
    m_s3=GetDlgItem(IDC_STATIC_S3);
 
    desc.Format(_T("%s\n\n%s"), pwndMain->GetInfo(_T("ProductName")),cpr);
-   
-   
+
+
