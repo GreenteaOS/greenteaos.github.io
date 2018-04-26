@@ -1,0 +1,8 @@
+{
+    "editor.trimAutoWhitespace": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.formatOnType": true,
+    "editor.formatOnSave": false,
+}

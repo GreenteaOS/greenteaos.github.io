@@ -1,17 +1,13 @@
 {
     "language": "English",
-
     "title": "Greentea OS",
     "were-coming-soon": "We're Coming Soon",
-
     "coming-soon_we-are-working": "We are working very hard on the new version of our site. It will bring a lot of new features. Stay tuned!",
     "coming-soon_or": "or",
     "become-a-dev": "Become a DEV",
     "see-our-wiki": "See our WIKI",
-
     "about-us_header": "About",
     "about-us": "Greentea OS is a free Windows-compatible operating system, written from scratch, home user and production oriented. We would first make it *actually* usable for day-to-day use.",
-
     "header_apps": "Apps",
     "header_games": "Games",
     "header_privacy": "Privacy",
@@ -19,13 +15,11 @@
     "header_download": "Download",
     "header_support": "Support",
     "header_github": "GitHub",
-
     "footer_made-by": "Site is created by  Greentea OS team and contributors. <a href='https://en.wikipedia.org/wiki/Green_tea'>Green tea</a> is like coffee, <a href='https://github.com/GreenteaOS/Kernel'>Greentea</a> is like OS. Greentea OS is fine too :)",
     "footer_copyright": "© 2018",
     "footer_team": "Greentea OS Team",
     "footer_social-networks": "Social Networks",
-
     "telegram-download": "Download from Telegram",
     "torrent": "Download with Torrent",
-    "relase-notes" : "See our Release Notes"
+    "relase-notes": "See our Release Notes"
 }
