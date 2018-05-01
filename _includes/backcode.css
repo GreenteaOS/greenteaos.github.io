@@ -4,6 +4,8 @@
   left: 0;
   display: flex;
   flex-direction: row;
+  background-image: url(https://raw.githubusercontent.com/GreenteaOS/Greentea/master/Images/screenshot.png);
+  background-size: cover;
 }
 /* highlight */
 .highlight .cm,
@@ -30,7 +32,7 @@
   color: white;
 }
 .highlight  pre { /* antibootstrap */
-  border: 0; 
+  border: 0;
   border-radius: 0;
 }
 .highlight {
