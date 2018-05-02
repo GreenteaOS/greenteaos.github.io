@@ -12,8 +12,8 @@
 }
 
 .inner-bg {
-    padding: 55px 0 60px;
-  
+    padding: 32px 0 32px;
+
     -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
     -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
@@ -29,10 +29,11 @@
 
 .coming-soon p {
     margin: 0;
-    font-size: 18px;
+    font-size: 21px;
     line-height: 36px;
     display: inline-block;
-    background: rgba(39, 40, 34,0.6);
+    /*background: rgba(39, 40, 34,0.6);*/
+    text-shadow: 0 0px 26px rgba(0, 0, 0, 1);
 }
 
 .coming-soon__paragraph-wrap {

@@ -4,8 +4,21 @@
   left: 0;
   display: flex;
   flex-direction: row;
+  width: 100%;
+  height: 100%;
   background-image: url(https://raw.githubusercontent.com/GreenteaOS/Greentea/master/Images/screenshot.png);
   background-size: cover;
+}
+
+/* Shadow */
+.backcode-wrap::after {
+  bottom: 0px;
+  content: "";
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-image: linear-gradient(transparent 25%, rgba(0, 0, 0, 0.008) 32.5%, rgba(0, 0, 0, 0.024) 40%, rgba(0, 0, 0, 0.055) 47.5%, rgba(0, 0, 0, 0.094) 55%, rgba(0, 0, 0, 0.15) 62.5%, rgba(0, 0, 0, 0.216) 70%, rgba(0, 0, 0, 0.294) 77.5%, rgba(0, 0, 0, 0.384) 85%, rgba(0, 0, 0, 0.486) 92.5%, rgba(0, 0, 0, 0.6) 100%);
 }
 /* highlight */
 .highlight .cm,
