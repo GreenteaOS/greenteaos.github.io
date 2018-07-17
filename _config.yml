@@ -18,3 +18,5 @@ theme-color: "#f8f8f8"
 markdown: kramdown
 plugins:
    - jemoji
+kramdown:
+  autolink: true
