@@ -16,3 +16,5 @@ theme-color: "#f8f8f8"
 # Build settings
 
 markdown: kramdown
+plugins:
+   - jemoji
