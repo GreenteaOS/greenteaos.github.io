@@ -6,7 +6,7 @@ available: "ru, it"
 # SEO related
 
 title: "Greentea OS"
-twitter: "@greenteaos"
+twitter: "@hexalang"
 author: "Greentea OS Team"
 description: "Greentea OS is a free Windows-compatible operating system written from scratch, but more user and production oriented. We would first make it *actually* usable for day-to-day use."
 image: "https://greenteaos.github.io/images/opengraph.png"
