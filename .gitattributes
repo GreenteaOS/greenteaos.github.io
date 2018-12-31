@@ -1,6 +1,5 @@
 * text=auto
 *.ico binary
-*.cab binary
 *.png binary
 *.jpg binary
 *.jpeg binary
