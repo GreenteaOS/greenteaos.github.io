@@ -13,16 +13,16 @@
 {% if title %}
     <meta name="twitter:title" content="{{ title | append: " - " | append: site.title }}" />
 {% else %}
-    <meta name="twitter:title" content="{{ site.title }}" /> 
+    <meta name="twitter:title" content="{{ site.title }}" />
 {% endif %}
-<meta name="twitter:description" content="{{ description | default: site.description }}" /> 
-<meta name="twitter:image" content="{{ image | default: site.image }}" /> 
+<meta name="twitter:description" content="{{ description | default: site.description }}" />
+<meta name="twitter:image" content="{{ image | default: site.image }}" />
 <!-- Open graph -->
 <meta property="og:type" content="website" />
 {% if title %}
     <meta property="og:title" content="{{ title | append: " - " | append: site.title }}" />
 {% else %}
-    <meta property="og:title" content="{{ site.title }}" /> 
+    <meta property="og:title" content="{{ site.title }}" />
 {% endif %}
 <meta property="og:description" content="{{ description | default: site.description }}" />
 <meta property="og:url" content="{{ url | default: site.url }}" />
@@ -39,7 +39,7 @@
 <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
 <link rel="mask-icon" href="{{ site.baseurl }}/safari-pinned-tab.svg" color="#528a3f">
 <meta name="msapplication-TileColor" content="#528a3f">
-<meta name="msapplication-TileImage" content="{{ site.baseurl }}/mstile-144x144.png">
+<meta name="msapplication-TileImage" content="{{ site.baseurl }}/assets/mstile-144x144.png">
 <meta name="viewport" content="ya-title={{ theme-color | default: site.theme-color }},ya-dock={{ theme-color | default: site.theme-color }}">
 <meta name="theme-color" content="{{ theme-color | default: site.theme-color }}">
 <!-- End Jekyll SEO tag 9000 -->
