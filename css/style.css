@@ -136,11 +136,11 @@ img {
     overflow: hidden;
     margin: 0;
 }
-    
+
 mark {
     background-color: #10b715;
     color: #fff;
-}    
+}
 
 .carousel-inner {
     background-color: #63696c;
@@ -170,7 +170,7 @@ mark {
 }
 .payment-options_control:checked + .payment-option {
     background-color: #286090;
-    border-color: #204d74;    
+    border-color: #204d74;
 }
 .payment-options > .payment-option {
     border-radius: 0;
@@ -202,4 +202,4 @@ mark {
     }
 }
 {% include backcode.css %}
-{% include donations/style.css %}
+{% include donate/style.css %}
