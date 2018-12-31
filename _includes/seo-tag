@@ -31,13 +31,13 @@
 <meta name="author" content="{{ author | default: site.author }}">
 
 <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-16x16.png" sizes="16x16">
 <link rel="icon" type="image/png" href="{{ site.baseurl }}/android-chrome-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicon-16x16.png" sizes="16x16">
 <link rel="manifest" href="{{ site.baseurl }}/assets/manifest.json">
-<link rel="mask-icon" href="{{ site.baseurl }}/safari-pinned-tab.svg" color="#528a3f">
+<link rel="mask-icon" href="{{ site.baseurl }}/assets/safari-pinned-tab.svg" color="#528a3f">
 <meta name="msapplication-TileColor" content="#528a3f">
 <meta name="msapplication-TileImage" content="{{ site.baseurl }}/assets/mstile-144x144.png">
 <meta name="viewport" content="ya-title={{ theme-color | default: site.theme-color }},ya-dock={{ theme-color | default: site.theme-color }}">
