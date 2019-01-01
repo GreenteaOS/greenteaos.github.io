@@ -1,6 +1,6 @@
 ---
 ---
-{% include bootstrap.css %}
+{% include footstrap.css %}
 
 body {
   display: flex;
