@@ -9,13 +9,13 @@
 <!-- Twitter card -->
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="{{ twitter | default: site.twitter }}" />
-<meta name="twitter:creator" content="{{ author | default: site.author }}" />
+<meta name="twitter:creator" content="{% include localise.html string="footer_team" %}" />
 {% if title %}
     <meta name="twitter:title" content="{{ title | append: " - " | append: site.title }}" />
 {% else %}
     <meta name="twitter:title" content="{{ site.title }}" />
 {% endif %}
-<meta name="twitter:description" content="{{ description | default: site.description }}" />
+<meta name="twitter:description" content="{% include localise.html string="description" %}" />
 <meta name="twitter:image" content="{{ image | default: site.image }}" />
 <!-- Open graph -->
 <meta property="og:type" content="website" />
@@ -28,7 +28,7 @@
 <meta property="og:url" content="{{ url | default: site.url }}" />
 <meta property="og:image" content="{{ image | default: site.image }}" />
 
-<meta name="author" content="{{ author | default: site.author }}">
+<meta name="author" content="{% include localise.html string="footer_team" %}">
 
 <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/apple-touch-icon.png">
