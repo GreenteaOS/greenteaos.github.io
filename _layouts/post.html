@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+	/>
+	<meta name="MobileOptimized" content="176" />
+
+	<title>{{ page.title }} — Greentea Blog</title>
+	{% seo title=false %}
+</head>
+
+<body>
+	{% include blog-style.html %} {% include github-style.html %}
+	<header>
+		<div class="container">
+			<nav class="main-nav">
+				<ul>
+					<li>
+						<a href="https://github.com/greenteaos">GitHub</a>
+					</li>
+					<li>
+						<a href="https://www.patreon.com/PeyTy">Patreon</a>
+					</li>
+				</ul>
+			</nav>
+			<div>
+				<a href="/">Greentea</a><strong><a href="/blog">Blog</a></strong>
+			</div>
+		</div>
+	</header>
+	<div class="content">
+		<div class="blog-post">
+			<h2>{{ page.title }}</h2>
+			{{ content }}
+
+			<div class="further-reading">
+				<h3>Further Reading</h3>
+
+				<ul>
+					{% assign sorted = site.blog | sort: 'date' | reverse %}
+					<!--
+
+					-->{% for page in sorted %}
+					<li>
+						<a href="{{ page.url | absolute_url }}">{{ page.title }}
+							<span class="date">{{ page.date | date: "%-d %B %Y" }}</span>
+						</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<p class="">
+				<a href="https://github.com/PeyTy">Created by PeyTy</a>
+				<a class="hide-sm" href="https://github.com/GreenteaOS/greenteaos.github.io/blob/master/{{page.path}}" style="float: right; padding: 0 10px;">Edit this page</a>
+			</p>
+		</div>
+	</footer>
+</body>
+
+</html>

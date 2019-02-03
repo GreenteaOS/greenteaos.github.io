@@ -6,17 +6,30 @@ available: "ru, it"
 # SEO related
 
 title: "Greentea OS"
-twitter: "@hexalang"
+twitter: "@greenteaos"
 author: "Greentea OS Team"
 description: "Greentea OS is a free Windows-compatible operating system written from scratch, but more user and production oriented. We would first make it *actually* usable for day-to-day use."
 image: "https://greenteaos.github.io/assets/images/opengraph.png"
 url: "https://greenteaos.github.io"
 theme-color: "#f8f8f8"
 
+# Structure
+
+collections:
+  blog:
+    output: true
+social:
+  name: Greentea OS
+  links:
+    - https://twitter.com/greenteaos
+    - https://github.com/greenteaos
+
 # Build settings
 
 markdown: kramdown
 plugins:
    - jemoji
+   - jekyll-seo-tag
+   - jekyll-sitemap
 kramdown:
   autolink: true
