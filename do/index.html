@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html, charset=UTF-8" />
+  <title>Greentea Action Request</title>
+</head>
+<body>
+This page simply redirects actions to the system
+<noscript><br>Please, enable JavaScript to use this feature</noscript>
+<div id="frameQuery"></div>
+<script type="text/javascript">
+var target = "greentea:\/\/do" + window.location.search
+var el = document.getElementById('frameQuery') || document.body
+var iframes = document.createElement('iframe')
+if (iframes !== null) {
+  el.appendChild(iframes)
+  iframes.src = target
+}
+</script>
+</body>
+</html>
