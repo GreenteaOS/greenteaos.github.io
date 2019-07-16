@@ -2,7 +2,7 @@
 
 Visit our homepage https://greenteaos.github.io :green_heart: :green_heart: :green_heart:
 
-Warm and cozy operating system, free and open-source, compatible with apps made for Windows
+Warm and cozy operating system, free and open-source, compatible with existing apps
 
 Issues and documentation: https://github.com/GreenteaOS/Greentea
 

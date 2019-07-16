@@ -22,14 +22,14 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Windows image file caches
+# Image file caches
 Thumbs.db
 ehthumbs.db
 # Folder config file
 Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
-# Windows shortcuts
+# Shortcuts
 *.lnk
 
 # temporary files which can be created if a process still has a handle open of a deleted file
