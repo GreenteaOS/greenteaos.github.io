@@ -1,6 +1,5 @@
 ---
 ---
-{% include footstrap.css %}
 
 body {
   display: flex;
@@ -21,7 +20,6 @@ body {
 /*****                                                       *****/
 /* Cooming Soon page style by Greentea OS Team and contribuitors */
 /*****                                                       *****/
-
 
 body {
     margin: 0;
