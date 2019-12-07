@@ -11,7 +11,7 @@ author: "Greentea OS"
 description: "Greentea OS is a free operating system aimed to run .exe files natively"
 image: "https://greenteaos.github.io/assets/images/opengraph.png"
 url: "https://greenteaos.github.io"
-theme-color: "#f8f8f8"
+theme-color: "#21b12a"
 
 # Structure
 
