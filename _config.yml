@@ -8,7 +8,7 @@ available: "ru, it"
 title: "Greentea OS"
 twitter: "@greenteaos"
 author: "Greentea OS"
-description: "Greentea OS is a free operating system written from scratch, but more user and production oriented. We would first make it *actually* usable for day-to-day use."
+description: "Greentea OS is a free operating system aimed to run .exe files natively"
 image: "https://greenteaos.github.io/assets/images/opengraph.png"
 url: "https://greenteaos.github.io"
 theme-color: "#f8f8f8"
@@ -16,6 +16,8 @@ theme-color: "#f8f8f8"
 # Structure
 
 collections:
+  wiki:
+    output: true
   blog:
     output: true
 social:
@@ -27,9 +29,12 @@ social:
 # Build settings
 
 markdown: kramdown
+highlighter: rouge
 plugins:
    - jemoji
    - jekyll-seo-tag
    - jekyll-sitemap
 kramdown:
   autolink: true
+  input: GFM
+  syntax_highlighter: rouge
