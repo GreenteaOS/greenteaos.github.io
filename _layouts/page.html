@@ -3,6 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
 	/>
 	<meta name="MobileOptimized" content="176" />
@@ -26,7 +28,7 @@
 				</ul>
 			</nav>
 			<div>
-				<a href="/">Greentea</a><strong><a href="/blog">Blog</a></strong>
+				<a href="/"><img src="{{ site.baseurl }}/assets/favicon-96x96.png" width="30" height="30">Greentea OS</a><strong><a href="/blog">Blog</a></strong>
 			</div>
 		</div>
 	</header>
@@ -34,23 +36,6 @@
 		<div class="blog-post">
 			<h2>{{ page.title }}</h2>
 			{{ content }}
-
-			<div class="further-reading">
-				<h3>Further Reading</h3>
-
-				<ul>
-					{% assign sorted = site.blog | sort: 'date' | reverse %}
-					<!--
-
-					-->{% for page in sorted %}
-					<li>
-						<a href="{{ page.url | absolute_url }}">{{ page.title }}
-							<span class="date">{{ page.date | date: "%-d %B %Y" }}</span>
-						</a>
-					</li>
-					{% endfor %}
-				</ul>
-			</div>
 		</div>
 	</div>
 	<footer>
