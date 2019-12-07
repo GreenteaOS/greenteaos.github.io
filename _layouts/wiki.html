@@ -36,23 +36,6 @@
 		<div class="blog-post">
 			<h2>{{ page.title }}</h2>
 			{{ content }}
-
-			<div class="further-reading">
-				<h3>Further Reading</h3>
-
-				<ul>
-					{% assign sorted = site.wiki | sort: 'date' | reverse %}
-					<!--
-
-					-->{% for page in sorted %}
-					<li>
-						<a href="{{ page.url | absolute_url }}">{{ page.title }}
-							<span class="date">{{ page.date | date: "%-d %B %Y" }}</span>
-						</a>
-					</li>
-					{% endfor %}
-				</ul>
-			</div>
 		</div>
 	</div>
 	<footer>
@@ -63,6 +46,8 @@
 			</p>
 		</div>
 	</footer>
+    {% include texts.html %}
+    {% include scripts.html %}
 </body>
 
 </html>
