@@ -2,28 +2,28 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                    <a href="{% include lurl %}home/" class="navbar-brand"><img src="{{ site.baseurl }}/assets/favicon-96x96.png"></a>
+                    <a href="/" class="navbar-brand"><img src="{{ site.baseurl }}/assets/favicon-96x96.png"></a>
                     <a class="expand-drawer" href="#drawer" onclick="document.getElementById('drawer').className += ' drawer_expanded'; event.preventDefault();"></a>
             </div>
             <div id="drawer" class="drawer">
                 <ul class="nav navbar-nav navbar-right navbar-uppercase">
                     <li>
-                        <a href="{% include lurl %}apps/"{% if ref == "apps" %}class="navbar-nav__link_current"{% endif %}>Apps</a>
+                        <a href="/apps/"{% if ref == "apps" %}class="navbar-nav__link_current"{% endif %}>Apps</a>
                     </li>
                     <li>
-                        <a href="{% include lurl %}games/"{% if ref == "games" %}class="navbar-nav__link_current"{% endif %}>Games</a>
+                        <a href="/games/"{% if ref == "games" %}class="navbar-nav__link_current"{% endif %}>Games</a>
                     </li>
                     <li>
-                        <a href="{% include lurl %}privacy/"{% if ref == "privacy" %}class="navbar-nav__link_current"{% endif %}>Privacy</a>
+                        <a href="/privacy/"{% if ref == "privacy" %}class="navbar-nav__link_current"{% endif %}>Privacy</a>
                     </li>
                     <li>
-                        <a href="{% include lurl %}donate/" {% if ref == "donate" %}class="navbar-nav__link_current"{% endif %}>Donate</a>
+                        <a href="/donate/" {% if ref == "donate" %}class="navbar-nav__link_current"{% endif %}>Donate</a>
                     </li>
                     <li>
-                        <a href="{% include lurl %}download/"{% if ref == "download" %}class="navbar-nav__link_current"{% endif %}>Download</a>
+                        <a href="/download/"{% if ref == "download" %}class="navbar-nav__link_current"{% endif %}>Download</a>
                     </li>
                     <li>
-                        <a href="{% include lurl %}support/"{% if ref == "support" %}class="navbar-nav__link_current"{% endif %}>Support</a>
+                        <a href="/support/"{% if ref == "support" %}class="navbar-nav__link_current"{% endif %}>Support</a>
                     </li>
                     <li>
                         <a href="https://github.com/GreenteaOS/Greentea">GitHub</a>
