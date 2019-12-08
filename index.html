@@ -1,0 +1,127 @@
+---
+---
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Greentea OS</title>
+	<meta name="keywords" content="GreenteaOS greentea operating system">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="google-site-verification" content="r9QR0nzVoCSoh04LhsLau403jbzC4weuqk0ypB1LD1g" />
+	<link rel="manifest" href="/manifest.json">
+	<meta name="viewport" content="width=device-width">
+	{% seo title=false %}
+	<meta name="twitter:image" content="{{ image | default: site.image }}" />
+	<meta property="og:image" content="{{ image | default: site.image }}" />
+</head>
+
+<body>
+	{% include main-style.html %}
+
+	<div class="page shadow">
+			<div class="wip-label">Site is under construction</div>
+
+		{% include header.html %}
+
+		<div class="container">
+
+			<!-- INTERACTIVE DEMO -->
+
+			<div class="col-1 col-sm-2 pad">
+				<div class="shadow fullheight">
+					<div id="editor" class="pad code editor" contenteditable="true">// Live demo! Edit to compile on the fly<br/>
+/* !! WARNING this is a VERY old compiler, will be updated soon !! */<br/>
+@native("console")<br/>
+declare class Console {<br/>&nbsp; &nbsp; static function log(...message: String): Void<br/>
+}<br/><br/>
+Console.log("Hello from Greentea!")<br/>
+Console.log("No `static function main` required")</div>
+				</div>
+			</div>
+			<div class="col-1 col-sm-2 pad">
+				<div class="shadow fullheight">
+					<div id="output" class="pad code output">
+						...JavaScript is required to run interactive demo
+					</div>
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="shadow margin">
+					<div id="debug" class="pad code output">
+						...Debug
+					</div>
+				</div>
+			</div>
+
+			<!-- DOWNLOADS -->
+
+			<div class="col-1">
+				<div class="shadow margin">
+					<div id="download" class="pad code output">
+						<div><h2>Download</h2></div>
+						<div>Available for 64-bit Linux, macOS and Windows</div>
+						<img src="https://github.com/Greentea/Greentea/blob/master/preview.png?raw=true"/>
+					</div>
+				</div>
+			</div>
+			<div class="col-2 col-sm-2 pad">
+				<div class="shadow fullheight">
+					<div id="stable" class="pad code output">
+						<a href="https://github.com/Greentea/Greentea#stable">
+							<div>Install Greentea</div>
+							<div><b>COMING SOON</b> Stable compiler versions</div>
+						</a>
+						<div><a href="#changelog-Greentea">Changelog</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-2 col-sm-2 pad">
+				<div class="shadow fullheight">
+					<div id="unstable" class="pad code output">
+						<a href="https://github.com/Greentea/Greentea#tools--ide">
+							<div>Tools & IDE</div>
+							<div>Packages for code editors</div>
+						</a>
+						<div><a href="#changelog-tools">Changelog</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="shadow margin">
+					<div id="without" class="pad code output">
+						<a href="/try">Try Greentea without installing</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div id="overview"></div>
+		<div id="install"></div>
+		<div id="learn"></div>
+		<div id="community"></div>
+
+		{% include footer.html %}
+	</div>
+	{% include texts.html %}
+	{% include scripts.html %}
+</body>
+</html>
