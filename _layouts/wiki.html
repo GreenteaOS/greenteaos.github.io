@@ -122,8 +122,8 @@
     <script>
     {
         let sidebarToggles = [].slice.call(document.getElementsByClassName("sidebar-toggle"))
-        sidebarToggles.forEach(element => {
-            element.addEventListener("click", v => document.body.classList.toggle("sidebar-hidden"))
+        sidebarToggles.forEach(function (element) {
+            element.addEventListener("click", function (v) { document.body.classList.toggle("sidebar-hidden") })
         });
     }
     </script>
