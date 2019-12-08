@@ -4,19 +4,19 @@
 		padding: 0px;
 		margin: 0px;
 		border: 0;
+		font-size: 100%;
 		vertical-align: baseline;
 		box-sizing: border-box;
-		font-size: 0px; /* Makes whitespace non-markupable */
 	}
 
 	body {
 		padding: 0;
 		margin: 0;
+		font-size: 20px;
 	}
 
 	a {
 		color: #000;
-		font-size: 18px;
 	}
 
 	a:hover {
@@ -47,7 +47,6 @@
 
 	h1 {
 		font-weight: normal;
-		font-size: 36px;
 	}
 
 	h2 {
@@ -62,6 +61,9 @@
 	img {
 		max-width: 100%;
 		height: auto;
+		position: relative;
+		top: 2px;
+		/* padding-right: 2px; */
 	}
 
 	div.container,
@@ -80,8 +82,8 @@
 
 	header,
 	footer {
-		background: #1D1D1D;
-		color: #ffffff;
+		/* background: #1D1D1D; */
+		/* color: #ffffff; */
 	}
 
 	p.post-hero {
@@ -92,8 +94,7 @@
 	header a,
 	footer a {
 		text-decoration: none;
-		color: #ffffff;
-		font-size: 20px;
+		/* color: #ffffff; */
 	}
 
 	header,
@@ -168,9 +169,8 @@
 		margin: 0 1em 0.5em;
 	}
 
-	.blog-post p, .blog-post p * {
+	.blog-post p {
 		text-align: justify;
-		font-size: 18px;
 	}
 
 	.blog-post p[align="center"] {
