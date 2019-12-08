@@ -1,0 +1,46 @@
+/* Code */
+
+code, code * {
+	font-size: 17px !important;
+	font-family: "SF Mono", "Consolas", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace !important;
+}
+
+.highlighter-rouge {
+	background-color: #f6f8fa;
+	margin: 0 1em 1em;
+}
+
+p code.highlighter-rouge, li code.highlighter-rouge {
+	margin: auto;
+}
+
+.article > .highlighter-rouge {
+	padding: 0.4em;
+}
+
+/* Markdown */
+
+li ul li {
+	margin-top: 1em !important;
+}
+
+/* Sidebar */
+
+.sidebar-toggle :nth-child(3) {
+	background-color: rgb(250, 96, 74);
+}
+
+.sidebar-toggle span {
+	background-color: rgb(0, 173, 239);
+}
+
+.sidebar ul li {
+	padding: 2px 0 4px 15px;
+	margin: 0;
+}
+
+/* Emoji haXe logo */
+
+img[src*="favicon"] {
+	margin-right: 4px;
+}
