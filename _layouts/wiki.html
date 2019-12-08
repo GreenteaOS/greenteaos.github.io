@@ -8,22 +8,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
 	/>
 	<meta name="MobileOptimized" content="176" />
+	<meta name="google-site-verification" content="r9QR0nzVoCSoh04LhsLau403jbzC4weuqk0ypB1LD1g" />
 
 	<title>{{ page.title }} — Greentea Wiki</title>
 	{% seo title=false %}
-	<meta name="twitter:image" content="{{ image | default: site.image }}" />
-	<meta property="og:image" content="{{ image | default: site.image }}" />
+
+	{% include book-style.html %}
+	<style>{% include book-and-blog.css %}</style>
+	<style>{% include highlighter.css %}</style>
 </head>
 
 <body>
-	{% include blog-style.html %} {% include github-style.html %}
-	<header>
+	<div class="content">
+	<!-- <header>
 		<div class="container">
 			<nav class="main-nav">
 				<ul>
-					<li>
-						<a href="/blog">Blog</a>
-					</li>
 					<li>
 						<a href="https://github.com/greenteaos">GitHub</a>
 					</li>
@@ -36,21 +36,97 @@
 				<a href="/">Greentea</a><strong><a href="/wiki">Wiki</a></strong>
 			</div>
 		</div>
-	</header>
-	<div class="content">
-		<div class="blog-post">
-			<h2>{{ page.title }}</h2>
-			{{ content }}
-		</div>
-	</div>
-	<footer>
+    </header> -->
+
+
+        <div class="sidebar">
+            <div style="margin-block-start: 7px; padding-inline-start: 15px; margin-block-end: 4px;">
+                <a href="/">Greentea</a><strong><a href="/wiki">Wiki</a></strong>
+            </div>
+            <ul>
+	    {% assign sorted = site.wiki | sort: 'title' %}
+	    {% assign otherSorted = (sorted | where: "into" , nil) %} <!-- not works -->
+	    {% assign introSorted = (sorted | where: "into" , "intro" | reverse) %}
+	    {% assign compilerSorted = (sorted | where: "into" , "compiler") %}
+
+	    {% for p in introSorted %}
+                <li>
+                {% if p.path == page.path %}
+                    <a href="{{p.url}}"><strong>{{ p.title }}</strong></a>
+                {% else %}
+                    <a href="{{p.url}}">{{ p.title }}</a>
+                {% endif %}
+                </li>
+            {% endfor %}
+
+            <div style="height: 1px; border-top: 1px solid rgba(139, 216, 255, 0.2);"></div>
+
+            {% for p in sorted %}
+	    {% if p.into == %}
+                <li>
+                {% if p.path == page.path %}
+                    <a href="{{p.url}}"><strong>{{ p.title }}</strong></a>
+                {% else %}
+                    <a href="{{p.url}}">{{ p.title }}</a>
+                {% endif %}
+                </li>
+	    {% endif %}
+            {% endfor %}
+
+            <div style="height: 1px; border-top: 1px solid rgba(139, 216, 255, 0.2);"></div>
+
+	    {% for p in compilerSorted %}
+                <li>
+                {% if p.path == page.path %}
+                    <a href="{{p.url}}"><strong>{{ p.title }}</strong></a>
+                {% else %}
+                    <a href="{{p.url}}">{{ p.title }}</a>
+                {% endif %}
+                </li>
+            {% endfor %}
+
+            </ul>
+        </div>
+
+        <div class="sidebar-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="page">
+                <div class="header">
+                        <div class="header-spacer"></div>
+                        <a href="/blog" class="header-button">Blog</a>
+                        <a href="https://github.com/greenteaos" class="header-button">GitHub</a>
+                        <a href="https://www.patreon.com/PeyTy" class="header-button">Donate</a>
+                    </div>
+            <div class="article markdown">
+                <h2>
+                    {{page.title}}
+                </h2>
+                {{ content }}
+            </div><br/><br/>
+        </div>
+
+
+	<!-- <footer>
 		<div class="container">
 			<p class="">
 				<a href="https://github.com/PeyTy">Created by PeyTy</a>
 				<a class="hide-sm" href="https://github.com/GreenteaOS/greenteaos.github.io/blob/master/{{page.path}}" style="float: right; padding: 0 10px;">Edit this page</a>
 			</p>
 		</div>
-	</footer>
+	</footer> -->
+    </div>
+    <script>
+    {
+        let sidebarToggles = [].slice.call(document.getElementsByClassName("sidebar-toggle"))
+        sidebarToggles.forEach(element => {
+            element.addEventListener("click", v => document.body.classList.toggle("sidebar-hidden"))
+        });
+    }
+    </script>
     {% include texts.html %}
     {% include scripts.html %}
 </body>
