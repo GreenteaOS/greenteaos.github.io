@@ -280,6 +280,11 @@ button:focus {
 .qr-code {
 	width: 200px;
 	height: 200px;
+	display: block;
+	height: auto;
+	width: auto;
+	max-width: 199px;
+	max-height: 199px;
 }
 
 .donate-body {
