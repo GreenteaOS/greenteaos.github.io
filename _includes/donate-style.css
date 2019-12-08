@@ -17,18 +17,18 @@
 	padding: 0px;
 	margin: 0px;
 	border: 0;
-	font-size: 100%;
+	/*font-size: 100%;*/
 	vertical-align: baseline;
 	box-sizing: border-box;
 }
 
 body {
-	position: absolute;
-	background-color: gainsboro;
-	display: flex;
-	min-height: 100%;
-	min-width: 100%;
-	padding: 10px;
+	/*position: absolute;*/
+	/*background-color: gainsboro;*/
+	/*display: flex;*/
+	/*min-height: 100%;*/
+	/*min-width: 100%;*/
+	/*padding: 10px;*/
 }
 
 .page {
@@ -326,6 +326,7 @@ button:focus {
 .donate-wallet {
 	word-break: break-all;
 	margin-bottom: 5px;
+	font-size: 18px;
 }
 
 .space-between {
@@ -339,6 +340,7 @@ button:focus {
 	width: 1em;
 	height: 1em;
 	vertical-align: -12.5%;
+	font-size: 18px;
 }
 
 .col-1 {
@@ -367,4 +369,12 @@ button:focus {
 	.mobile {
 		display: none;
 	}
+}
+
+div.container {
+	max-width: 100%;
+}
+
+div.content {
+	max-width: 100%;
 }
