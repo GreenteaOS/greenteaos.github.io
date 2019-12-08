@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html, charset=UTF-8" />
-  <title>Greentea Action Request</title>
+	<meta http-equiv="Content-Type" content="text/html, charset=UTF-8" />
+	<title>Greentea Action Request</title>
 </head>
 <body>
 <style>
 #frameQuery {
-  position: absolute;
-  left: -10000px;
-  top: -10000px;
+	position: absolute;
+	left: -10000px;
+	top: -10000px;
 }
 </style>
 This page simply redirects actions to the system
@@ -20,8 +20,8 @@ var target = "greentea:\/\/do" + window.location.search
 var el = document.getElementById('frameQuery') || document.body
 var iframes = document.createElement('iframe')
 if (iframes !== null) {
-  el.appendChild(iframes)
-  iframes.src = target
+	el.appendChild(iframes)
+	iframes.src = target
 }
 </script>
 </body>
