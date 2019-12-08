@@ -13,7 +13,10 @@
 				found[i].innerText = text
 			}
 		} else {
-			document.getElementById(id).innerText = text
+			var target = document.getElementById(id)
+			if (target != null) {
+				target.innerText = text
+			}
 		}
 	}
 
