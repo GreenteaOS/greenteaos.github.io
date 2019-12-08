@@ -5,6 +5,8 @@ title: Welcome to Greentea Wiki
 
 ## Greentea Operating System
 
+[Read old Wiki here](https://github.com/GreenteaOS/Greentea)
+
 Warm and cozy, open-source operating system compatible with existing apps and games
 
 Greentea is an operating system based on open source code. The main idea of the project is to create a compatible environment for the existing software as fast and as qualitatively as possible and provide the user with the best experience with a personal computer.
