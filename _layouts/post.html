@@ -8,15 +8,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
 	/>
 	<meta name="MobileOptimized" content="176" />
+	<meta name="google-site-verification" content="r9QR0nzVoCSoh04LhsLau403jbzC4weuqk0ypB1LD1g" />
 
 	<title>{{ page.title }} — Greentea Blog</title>
 	{% seo title=false %}
 	<meta name="twitter:image" content="{{ image | default: site.image }}" />
 	<meta property="og:image" content="{{ image | default: site.image }}" />
+	<style>{% include book-and-blog.css %}</style>
+	<style>{% include highlighter.css %}</style>
 </head>
 
 <body>
-	{% include blog-style.html %} {% include github-style.html %}
+	{% include blog-style.html %}
 	<header>
 		<div class="container">
 			<nav class="main-nav">
@@ -49,24 +52,19 @@
 					{% assign sorted = site.blog | sort: 'date' | reverse %}
 					<!--
 
-					-->{% for page in sorted %}
+					-->{% for page in sorted %}{% if page.title == 'Welcome' %} {% else %}
 					<li>
 						<a href="{{ page.url | absolute_url }}">{{ page.title }}
 							<span class="date">{{ page.date | date: "%-d %B %Y" }}</span>
 						</a>
-					</li>
+					</li>{% endif %}
 					{% endfor %}
 				</ul>
 			</div>
 		</div>
 	</div>
 	<footer>
-		<div class="container">
-			<p class="">
-				<a href="https://github.com/PeyTy">Created by PeyTy</a>
-				<a class="hide-sm" href="https://github.com/GreenteaOS/greenteaos.github.io/blob/master/{{page.path}}" style="float: right; padding: 0 10px;">Edit this page</a>
-			</p>
-		</div>
+		<br/><br/>
 	</footer>
     {% include texts.html %}
     {% include scripts.html %}
