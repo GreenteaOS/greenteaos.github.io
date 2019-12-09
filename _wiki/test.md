@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: Test
+title: Read old Wiki
 ---
 
 [Read old Wiki here](https://github.com/GreenteaOS/Greentea)
