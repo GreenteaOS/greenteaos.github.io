@@ -16,8 +16,7 @@ Warm and cozy, open-source operating system compatible with existing apps and ga
 [![Join the chat at Gitter!](https://img.shields.io/badge/Gitter-Join%20Chat-47B192.svg?logo=Gitter)](https://gitter.im/GreenteaOS/Lobby)
 [![GPL License](https://img.shields.io/badge/License-GNU%20LGPLv3-green.svg?style=flat)](https://github.com/GreenteaOS/Greentea#license)
 [![GitHub Feed](https://img.shields.io/badge/GitHub-Feed-0f9d58.svg?style=flat&logo=GitHub)](https://t.me/greenteaos_github)
-
-[![Community Links](https://img.shields.io/badge/Community-Links-orange.svg?style=flat)](User-Guide/Community.md)
+[![Community Links](https://img.shields.io/badge/Community-Links-orange.svg?style=flat)](https://greenteaos.github.io/wiki/community.html)
 [![Nightly Builds](https://img.shields.io/badge/Nightly-Builds-ff69b4.svg?style=flat)](https://ci.appveyor.com/project/PeyTy/kernel-vwmh6/build/artifacts)
 [![Donate](https://img.shields.io/badge/Donate-Thanks!-bb3bbb.svg?style=flat&logo=Patreon)](https://greenteaos.github.io/donate/)
 [![Discord](https://img.shields.io/badge/Discord-Join-758EDC.svg?logo=discord)](https://discord.gg/UGZq8GB)
@@ -34,43 +33,43 @@ Content rating [0+](https://en.wikipedia.org/wiki/Motion_picture_content_rating_
 
 ### User guide
 
-* :grey_question: :grey_exclamation: [Frequently asked questions](User-Guide/Frequently-Asked-Questions.md)
-* :performing_arts: [How to leave feedback or bug report](User-Guide/Issues.md)
-* :book: [How to edit wiki-pages](User-Guide/Wiki-How.md)
-* :cd: [How to download the latest version of the system](User-Guide/Download-Latest.md)
-* :desktop_computer: [How to install the system on your computer](User-Guide/Installation.md)
+* :grey_question: :grey_exclamation: [Frequently asked questions](https://greenteaos.github.io/Greentea/User-Guide/Frequently-Asked-Questions.html)
+* :performing_arts: [How to leave feedback or bug report](https://greenteaos.github.io/Greentea/User-Guide/Issues.html)
+* :book: [How to edit wiki-pages](https://greenteaos.github.io/Greentea/User-Guide/Wiki-How.html)
+* :cd: [How to download the latest version of the system](https://greenteaos.github.io/Greentea/User-Guide/Download-Latest.html)
+* :desktop_computer: [How to install the system on your computer](https://greenteaos.github.io/Greentea/User-Guide/Installation.html)
 * :peace_symbol: [Code of conduct](https://github.com/GreenteaOS/.github/blob/master/CODE_OF_CONDUCT.md)
 
 ### Developer and contributor guide
 
 Building, testing and enjoing development:
 
-* :hammer_and_wrench: [Build whole system](Developer-Guide/Build-Native.md)
-* :penguin: [Build within Ubuntu, macOS, and other Linux/BSD/unix-like systems](Developer-Guide/Build-Wine.md)
-* :package: [Running in VirtualBox](Developer-Guide/VirtualBox-Config.md)
-* :gear: [Recommended tools](Developer-Guide/Must-Have.md)
-* :dart: [Roadmap and goals](Developer-Guide/Roadmap.md)
-* :sunrise: [Create bootvid-compatible bitmaps](Developer-Guide/Create-bootvid-compatible-bitmaps.md) (not useful)
-* :sunrise: [How to contribute a Pull Request (PR or patch)](Developer-Guide/Create-Pull-Request.md)
-* :six::four: [x86-64/AMD64 support](Developer-Guide/x64.md)
-* :building_construction: [Continuous integration and nightly builds](Developer-Guide/CI.md)
-* :speaking_head: [Translation and localization](Developer-Guide/Localization.md)
-* :octocat: [Using Git and GitHub](Developer-Guide/Git-and-GitHub.md)
-* [Repositories distinction](Developer-Guide/Repos.md)
+* :hammer_and_wrench: [Build whole system](https://greenteaos.github.io/Greentea/Developer-Guide/Build-Native.html)
+* :penguin: [Build within Ubuntu, macOS, and other Linux/BSD/unix-like systems](https://greenteaos.github.io/Greentea/Developer-Guide/Build-Wine.html)
+* :package: [Running in VirtualBox](https://greenteaos.github.io/Greentea/Developer-Guide/VirtualBox-Config.html)
+* :gear: [Recommended tools](https://greenteaos.github.io/Greentea/Developer-Guide/Must-Have.html)
+* :dart: [Roadmap and goals](https://greenteaos.github.io/Greentea/Developer-Guide/Roadmap.html)
+* :sunrise: [Create bootvid-compatible bitmaps](https://greenteaos.github.io/Greentea/Developer-Guide/Create-bootvid-compatible-bitmaps.html) (not useful)
+* :sunrise: [How to contribute a Pull Request (PR or patch)](https://greenteaos.github.io/Greentea/Developer-Guide/Create-Pull-Request.html)
+* :six::four: [x86-64/AMD64 support](https://greenteaos.github.io/Greentea/Developer-Guide/x64.html)
+* :building_construction: [Continuous integration and nightly builds](https://greenteaos.github.io/Greentea/Developer-Guide/CI.html)
+* :speaking_head: [Translation and localization](https://greenteaos.github.io/Greentea/Developer-Guide/Localization.html)
+* :octocat: [Using Git and GitHub](https://greenteaos.github.io/Greentea/Developer-Guide/Git-and-GitHub.html)
+* [Repositories distinction](https://greenteaos.github.io/Greentea/Developer-Guide/Repos.html)
 
 ### What makes Greentea so special
 
-* [The GreenteaFS file system](User-Guide/Greentea-FS.md)
-* [Enhanced use of the Vulkan API](User-Guide/Vulkan.md)
-* [Emulation of other operating systems](User-Guide/Vulkan.md)
-* [Shop for applications, games and other content](User-Guide/Shop.md)
-* [Using web-alike technologies to build native apps](User-Guide/Web.md)
-* [Monolithic rolling-release updates of the system](User-Guide/Rolling.md)
-* [Unified control panel](User-Guide/Control-Panel.md)
-* [X86 emulation on third-party platforms](Developer-Guide/x86.md)
-* [Built-in protection mechanisms (antivirus, stability, isolation and snapshots)](User-Guide/Protection.md)
-* [Hexa programming language](User-Guide/Hexa.md)
-* [Custom build system](User-Guide/Build-System.md)
+* [The GreenteaFS file system](https://greenteaos.github.io/Greentea/User-Guide/Greentea-FS.html)
+* [Enhanced use of the Vulkan API](https://greenteaos.github.io/Greentea/User-Guide/Vulkan.html)
+* [Emulation of other operating systems](https://greenteaos.github.io/Greentea/User-Guide/Vulkan.html)
+* [Shop for applications, games and other content](https://greenteaos.github.io/Greentea/User-Guide/Shop.html)
+* [Using web-alike technologies to build native apps](https://greenteaos.github.io/Greentea/User-Guide/Web.html)
+* [Monolithic rolling-release updates of the system](https://greenteaos.github.io/Greentea/User-Guide/Rolling.html)
+* [Unified control panel](https://greenteaos.github.io/Greentea/User-Guide/Control-Panel.html)
+* [X86 emulation on third-party platforms](https://greenteaos.github.io/Greentea/Developer-Guide/x86.html)
+* [Built-in protection mechanisms (antivirus, stability, isolation and snapshots)](https://greenteaos.github.io/Greentea/User-Guide/Protection.html)
+* [Hexa programming language](https://greenteaos.github.io/Greentea/User-Guide/Hexa.html)
+* [Custom build system](https://greenteaos.github.io/Greentea/User-Guide/Build-System.html)
 
 ## Get Greentea
 
