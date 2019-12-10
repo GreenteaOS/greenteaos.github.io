@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Announcing weekly news reports
-date: 2019-07-25
+date: 2019-12-10
 ---
 
 Great news! Recently we have updated [Greentea homepage](https://greenteaos.github.io) with a [blog](https://greenteaos.github.io/blog) feature, so now you will see per-week news and reports. Pretty often, but stimulating progress and openness to the community.
