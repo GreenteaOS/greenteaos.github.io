@@ -34,7 +34,7 @@
 				</ul>
 			</nav>
 			<div>
-				<a href="/">Greentea</a><strong><a href="/blog">Blog</a></strong>
+				<a href="/">Greentea</a><strong><a href="/blog" id="text_blog">Blog</a></strong>
 			</div>
 		</div>
 	</header>
@@ -45,7 +45,7 @@
 
 			<div class="further-reading">
 				<br/>
-				<h3>Further Reading</h3>
+				<h3 id="text_further_reading">Further Reading</h3>
 
 				<ul>
 					{% assign sorted = site.blog | sort: 'date' | reverse %}
