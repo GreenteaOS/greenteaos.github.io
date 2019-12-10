@@ -6,7 +6,7 @@ title: Community
 ### Official
 
 - [Homepage](https://greenteaos.github.io)
-- [Discord](https://discord.gg/UGZq8GB)
+- [Discord Multilanguage Chats](https://discord.gg/UGZq8GB)
 - [Twitter](https://twitter.com/greenteaos)
 - [Gitter](https://gitter.im/GreenteaOS/Lobby)
 - [Telegram Channel](https://telegram.me/greenteaos_news)
