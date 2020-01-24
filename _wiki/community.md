@@ -21,4 +21,4 @@ title: Community
 
 - [Reddit /r/greenteaos](https://www.reddit.com/r/greenteaos/)
 
-Contribute your fan group to this page!
+[Contribute](https://github.com/GreenteaOS/greenteaos.github.io/blob/master/_wiki/community.md) your fan group to this page!
