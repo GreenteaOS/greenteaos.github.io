@@ -15,7 +15,10 @@ title: Community
 - [Telegram Multilanguage Chats](https://t.me/greenteaos_news/48)
 - [Matrix Multilanguage Chats](https://matrix.to/#/+greenteaos:matrix.org)
   - [Riot Web App](https://riot.im/app/#/group/+greenteaos:matrix.org)
+ - [OSDev.org](https://forum.osdev.org/viewtopic.php?f=2&t=36386)
 
 ### Unofficial
 
-Contribute to this page!
+- [Reddit /r/greenteaos](https://www.reddit.com/r/greenteaos/)
+
+Contribute your fan group to this page!
