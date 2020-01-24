@@ -13,6 +13,8 @@ title: Community
 - [Telegram Channel](https://telegram.me/greenteaos_news)
 - [Telegram Chat](https://telegram.me/greenteaos)
 - [Telegram Multilanguage Chats](https://t.me/greenteaos_news/48)
+- [Matrix Multilanguage Chats](https://matrix.to/#/+greenteaos:matrix.org)
+  - [Riot Web App](https://riot.im/app/#/group/+greenteaos:matrix.org)
 
 ### Unofficial
 
