@@ -13,9 +13,7 @@
 	<title>{{ page.title }} — Greentea Wiki</title>
 	{% seo title=false %}
 
-	{% include book-style.html %}
-	<style>{% include book-and-blog.css %}</style>
-	<style>{% include highlighter.css %}</style>
+    <link rel="stylesheet" type="text/css" href="https://hexalang.github.io/shared/wiki.css" />
 </head>
 
 <body>
@@ -119,14 +117,7 @@
 		</div>
 	</footer> -->
     </div>
-    <script>
-    {
-        let sidebarToggles = [].slice.call(document.getElementsByClassName("sidebar-toggle"))
-        sidebarToggles.forEach(function (element) {
-            element.addEventListener("click", function (v) { document.body.classList.toggle("sidebar-hidden") })
-        });
-    }
-    </script>
+    <script async="async" type="application/javascript" src="https://hexalang.github.io/shared/wiki.js"></script>
     {% include texts.html %}
     {% include scripts.html %}
 </body>
