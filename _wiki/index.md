@@ -1,13 +1,11 @@
 ---
 layout: wiki
-title: Welcome to Greentea Wiki
+title: Greentea Wiki
 ---
-
-[<img align="left" width="128px" height="128px" src="https://avatars0.githubusercontent.com/u/19654552" />](https://greenteaos.github.io)
 
 ## Greentea Operating System
 
-Warm and cozy, open-source operating system compatible with existing apps and games
+> Warm and cozy, open-source operating system compatible with existing apps and games
 <br/><br/>
 
 [![Awesome!](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/GreenteaOS/Tofita)
