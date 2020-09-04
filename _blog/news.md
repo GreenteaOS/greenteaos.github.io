@@ -8,7 +8,7 @@ Great news! Recently we have updated [Greentea homepage](https://greenteaos.gith
 
 ![Apollo Lake Laptop](pictures/apollo.jpg)
 
-Main testing device is now an Apollo Lake laptop. It has tricky firmware, so booting Greentea takes some effort (which is actually good for testing purposes). Previous device was Sandy Bridge PC but it just werks and boring, and eventually died with yet another Windows update. Thanks Microsoft for wiping BIOS!
+Main testing device is now an Apollo Lake laptop. It has tricky firmware, so booting Greentea takes some effort (which is actually good for testing purposes). Previous device was Sandy Bridge PC but it just werks and boring, and eventually died with yet another update.
 
 ### Test and debug
 
