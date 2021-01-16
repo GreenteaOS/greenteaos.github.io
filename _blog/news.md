@@ -4,15 +4,9 @@ title: Announcing weekly news reports
 date: 2019-12-10
 ---
 
-Great news! Recently we have updated [Greentea homepage](https://greenteaos.github.io) with a [blog](https://greenteaos.github.io/blog) feature, so now you will see per-week news and reports. Pretty often, but stimulating progress and openness to the community.
-
-![Apollo Lake Laptop](pictures/apollo.jpg)
-
 Main testing device is now an Apollo Lake laptop. It has tricky firmware, so booting Greentea takes some effort (which is actually good for testing purposes). Previous device was Sandy Bridge PC but it just werks and boring, and eventually died with yet another update.
 
 ### Test and debug
-
-![Weirdest Debug Ever](pictures/weird_debug.jpg)
 
 Debugging bootloader this way is not productive, so I will add text output into boot stage.
 

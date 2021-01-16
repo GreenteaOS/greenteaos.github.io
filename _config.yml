@@ -15,14 +15,10 @@ theme-color: "#528a3f"
 
 # Structure
 
-collections:
-  wiki:
-    output: true
-  blog:
-    output: true
 social:
   name: Greentea OS
   links:
+    - https://t.me/greenteaos
     - https://twitter.com/greenteaos
     - https://github.com/greenteaos
 
