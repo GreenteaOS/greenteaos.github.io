@@ -45,3 +45,7 @@ _config.yml
 
 # So you can use local server freely
 _site/
+vendor
+.bundle/config
+Gemfile
+Gemfile.lock
