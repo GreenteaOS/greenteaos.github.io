@@ -7,17 +7,7 @@ title: Community
 
 - [Homepage](https://greenteaos.github.io)
 - [Discord Multilanguage Chats](https://discord.gg/UGZq8GB)
-- [Gitter](https://gitter.im/GreenteaOS/Lobby)
 - [YouTube](https://www.youtube.com/channel/UChcz5b20vDOk4ERoPs-pCbw/featured)
 - [Telegram Channel](https://telegram.me/greenteaos_news)
-- [Telegram Chat](https://telegram.me/greenteaos)
+- [Telegram English Chat](https://telegram.me/greenteaos)
 - [Telegram Multilanguage Chats](https://t.me/greenteaos_news/48)
-- [Matrix Multilanguage Chats](https://matrix.to/#/+greenteaos:matrix.org)
-  - [Riot Web App](https://riot.im/app/#/group/+greenteaos:matrix.org)
- - [OSDev.org](https://forum.osdev.org/viewtopic.php?f=2&t=36386)
-
-### Unofficial
-
-- [Reddit /r/greenteaos](https://www.reddit.com/r/greenteaos/)
-
-[Contribute](https://github.com/GreenteaOS/greenteaos.github.io/blob/master/_wiki/community.md) your fan group to this page!
