@@ -6,7 +6,6 @@ available: "en, de, fr, es, ru, it, ch, jp"
 # SEO related
 
 title: "Greentea OS"
-twitter: "@greenteaos"
 author: "Greentea OS"
 description: "Greentea OS is a free operating system"
 image: "https://greenteaos.github.io/assets/images/opengraph.png"
@@ -19,7 +18,6 @@ social:
   name: Greentea OS
   links:
     - https://t.me/greenteaos
-    - https://twitter.com/greenteaos
     - https://github.com/greenteaos
 
 # Build settings

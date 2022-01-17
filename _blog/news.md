@@ -17,5 +17,3 @@ After fixing testing laptop, we will find out a better memory layout for ACPI. A
 Next step is to port .exe-loader works into kernel. First, into kernel mode, to see how it goes and ensure win32 basics works. Then move on to user space and multitasking.
 
 Having ACPI will also open opportunities to create PCI device drivers, and we have lots of references how to do that from other osdev projects. As for the storage - NVMe may be easier to implement than SATA, especially being supported on VirtualBox, and I have actual NVMe device to test.
-
-Stay in touch following our [community links](https://greenteaos.github.io/wiki/community.html). And subscribe to the [YouTube channel](https://www.youtube.com/channel/UChcz5b20vDOk4ERoPs-pCbw/featured) for upcoming videos.
