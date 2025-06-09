@@ -17,7 +17,6 @@
     <meta name="twitter:description" content="Discover Greentea OS, a powerful and user-friendly open-source operating system. Join our vibrant community and shape the future of desktop computing.">
     <meta name="twitter:image" content="https://greenteaos.github.io/assets/android-chrome-512x512.png">
 
-
     <!-- Preload Critical Resources -->
     <link rel="preload" href="https://greenteaos.github.io/assets/images/shot.jpg" as="image">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" as="style">
@@ -149,9 +148,9 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle at center, var(--accent-green-glow) 0%, transparent 70%);
-            opacity: 0;
-            transition: opacity 0.3s ease;
+            background: radial-gradient(circle at right, var(--accent-green-glow) 0%, transparent 70%);
+            opacity: 0.8;
+            transition: opacity 0.3s ease, background 0.3s ease-in-out;
             pointer-events: none;
             z-index: 0;
         }
@@ -205,36 +204,6 @@
         a:focus, button:focus {
             outline: 2px solid var(--accent-green);
             outline-offset: 2px;
-        }
-
-        /* Styling for the LLM section */
-        #llm-input-area {
-            min-height: 100px;
-            resize: vertical;
-        }
-        #llm-output-area {
-            min-height: 150px;
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            padding: 1rem;
-            border-radius: 0.75rem;
-            white-space: pre-wrap; /* Preserve whitespace and line breaks */
-            word-break: break-word; /* Break long words */
-        }
-        #llm-loading-indicator {
-            display: none; /* Hidden by default */
-        }
-        .spinner {
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            border-top: 4px solid var(--accent-green);
-            border-radius: 50%;
-            width: 24px;
-            height: 24px;
-            animation: spin 1s linear infinite;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
         }
 
         /* Specific styles for the screenshot in About section */
@@ -366,33 +335,6 @@
                     <div class="fade-in-section card-glow p-8 rounded-2xl" style="transition-delay: 300ms;"><h3 class="flex items-center gap-3 text-xl font-bold text-white mb-4"><i class="ph-bold ph-code text-purple-400 text-3xl"></i>Modern code</h3><ul class="space-y-2 text-[var(--secondary-text)]"><li>New code from scratch</li><li>State-of-the-art approaches</li><li>Innovative kernel design</li></ul></div>
                     <div class="fade-in-section card-glow p-8 rounded-2xl" style="transition-delay: 400ms;"><h3 class="flex items-center gap-3 text-xl font-bold text-white mb-4"><i class="ph-bold ph-gauge text-red-400 text-3xl"></i>Maximum performance</h3><ul class="space-y-2 text-[var(--secondary-text)]"><li>Instant single-step updates</li><li>Low memory usage</li><li>Performance-oriented features</li></ul></div>
                     <div class="fade-in-section card-glow p-8 rounded-2xl" style="transition-delay: 500ms;"><h3 class="flex items-center gap-3 text-xl font-bold text-white mb-4"><i class="ph-bold ph-users-three text-orange-400 text-3xl"></i>Shared vision</h3><ul class="space-y-2 text-[var(--secondary-text)]"><li>Fully open-source codebase</li><li>Community feedback shapes our path</li><li>Built by volunteers, for everyone</li></ul></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Gemini API Feature Idea Generator -->
-        <section id="feature-generator" class="py-16 sm:py-24 bg-black">
-            <div class="container mx-auto px-6 text-center">
-                <div class="fade-in-section">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Brainstorm Greentea OS Features with AI</h2>
-                    <p class="text-[var(--secondary-text)] mt-4 max-w-2xl mx-auto mb-10 text-lg">
-                        Curious about what Greentea OS could do? Enter a prompt and let our AI suggest innovative features!
-                    </p>
-                    <div class="max-w-2xl mx-auto bg-card-bg p-8 rounded-2xl border border-border-color shadow-lg">
-                        <textarea id="llm-input-area" class="w-full p-4 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-accent-green mb-4" rows="4" placeholder="e.g., 'What kind of security features could Greentea OS have?' or 'Suggest a unique productivity tool.'"></textarea>
-                        <button id="generate-feature-button" class="bg-accent-blue hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 w-full sm:w-auto mx-auto" role="button">
-                            <i class="ph-bold ph-sparkle text-xl"></i>
-                            <span>Generate Feature Idea</span>
-                        </button>
-                        <div id="llm-loading-indicator" class="mt-4 flex justify-center items-center gap-2 hidden">
-                            <div class="spinner"></div>
-                            <span class="text-[var(--secondary-text)]">Generating idea...</span>
-                        </div>
-                        <div id="llm-output-area" class="mt-8 text-left text-[var(--secondary-text)] overflow-auto">
-                            <!-- AI generated content will appear here -->
-                            No feature ideas generated yet. Try typing a prompt above!
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -558,71 +500,6 @@
             drawParticles(); // Start the animation loop
         });
         window.addEventListener('resize', resizeCanvas);
-
-
-        // --- Gemini API Integration for Feature Generation ---
-        const generateFeatureButton = document.getElementById('generate-feature-button');
-        const llmInputArea = document.getElementById('llm-input-area');
-        const llmOutputArea = document.getElementById('llm-output-area');
-        const llmLoadingIndicator = document.getElementById('llm-loading-indicator');
-
-        generateFeatureButton.addEventListener('click', async () => {
-            const userPrompt = llmInputArea.value.trim();
-            if (!userPrompt) {
-                llmOutputArea.textContent = "Please enter a prompt to generate a feature idea.";
-                return;
-            }
-
-            llmLoadingIndicator.classList.remove('hidden'); // Show loading indicator
-            generateFeatureButton.disabled = true; // Disable button during generation
-            llmOutputArea.textContent = ""; // Clear previous output
-
-            try {
-                // Construct the prompt for the LLM
-                let chatHistory = [{ role: "user", parts: [{ text: `Generate an innovative and concise feature idea for an open-source desktop operating system named Greentea OS, based on this user request: "${userPrompt}". Focus on a single, compelling idea, and explain it briefly.` }] }];
-
-                const payload = {
-                    contents: chatHistory,
-                    generationConfig: {
-                        temperature: 0.7, // Adjust temperature for creativity
-                        maxOutputTokens: 200 // Limit output length
-                    }
-                };
-
-                const apiKey = ""; // Canvas will automatically provide the API key
-                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
-
-                const response = await fetch(apiUrl, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
-                });
-
-                if (!response.ok) {
-                    const errorData = await response.json();
-                    console.error('API Error:', errorData);
-                    llmOutputArea.textContent = `Error: Failed to generate feature idea. ${errorData.error?.message || 'Unknown error.'}`;
-                    return;
-                }
-
-                const result = await response.json();
-
-                if (result.candidates && result.candidates.length > 0 &&
-                    result.candidates[0].content && result.candidates[0].content.parts &&
-                    result.candidates[0].content.parts.length > 0) {
-                    const generatedText = result.candidates[0].content.parts[0].text;
-                    llmOutputArea.textContent = generatedText;
-                } else {
-                    llmOutputArea.textContent = "Could not generate a feature idea. Please try a different prompt.";
-                }
-            } catch (error) {
-                console.error("Fetch error:", error);
-                llmOutputArea.textContent = "An error occurred while connecting to the AI. Please try again.";
-            } finally {
-                llmLoadingIndicator.classList.add('hidden'); // Hide loading indicator
-                generateFeatureButton.disabled = false; // Re-enable button
-            }
-        });
     </script>
 </body>
 </html>
