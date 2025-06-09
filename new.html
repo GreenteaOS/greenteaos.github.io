@@ -160,6 +160,7 @@
             opacity: 0.8;
         }
 
+        /* Pulse glow for buttons */
         .pulse-glow {
             animation: pulse-glow-animation 2s infinite;
         }
@@ -168,6 +169,17 @@
             0% { box-shadow: 0 0 15px 0px rgba(88, 101, 242, 0.4); }
             50% { box-shadow: 0 0 30px 5px rgba(88, 101, 242, 0.6); }
             100% { box-shadow: 0 0 15px 0px rgba(88, 101, 242, 0.4); }
+        }
+
+        /* Patreon button specific glow */
+        .patreon-glow {
+            animation: patreon-pulse-glow-animation 2s infinite;
+        }
+
+        @keyframes patreon-pulse-glow-animation {
+            0% { box-shadow: 0 0 15px 0px rgba(255, 66, 77, 0.4); }
+            50% { box-shadow: 0 0 30px 5px rgba(255, 66, 77, 0.6); }
+            100% { box-shadow: 0 0 15px 0px rgba(255, 66, 77, 0.4); }
         }
 
         /* Mobile menu smooth transition */
@@ -314,9 +326,9 @@
                         <div class="card-glow p-6 rounded-2xl">
                             <h3 class="text-xl font-bold text-white mb-4">Key Features</h3>
                             <ul class="space-y-2 text-[var(--secondary-text)]">
-                                <li>Customizable desktop environment</li>
-                                <li>Performance without compromises</li>
-                                <li>Lightweight and user-oriented</li>
+                                <li class="flex items-center gap-2"><i class="ph-bold ph-gear-six text-blue-400 text-xl"></i>Customizable desktop environment</li>
+                                <li class="flex items-center gap-2"><i class="ph-bold ph-gauge text-red-400 text-xl"></i>Performance without compromises</li>
+                                <li class="flex items-center gap-2"><i class="ph-bold ph-leaf text-green-400 text-xl"></i>Lightweight and user-oriented</li>
                             </ul>
                         </div>
                     </div>
@@ -385,8 +397,8 @@
                             <i class="ph-fill ph-discord-logo text-2xl"></i>
                             <span>Join Discord Server</span>
                         </a>
-                        <!-- New Patreon Button -->
-                        <a href="https://www.patreon.com/your-patreon-page" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-[var(--patreon-color)] hover:opacity-90 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105" role="button">
+                        <!-- New Patreon Button with glow -->
+                        <a href="https://www.patreon.com/your-patreon-page" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-[var(--patreon-color)] hover:opacity-90 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 patreon-glow" role="button">
                             <i class="ph-fill ph-patreon-logo text-2xl"></i>
                             <span>Become a Patron</span>
                         </a>
