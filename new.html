@@ -236,6 +236,12 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+
+        /* Specific styles for the screenshot in About section */
+        .about-screenshot-container {
+            transition: transform 0.3s ease;
+            animation: float 6s ease-in-out infinite; /* Apply float animation */
+        }
     </style>
 </head>
 <body class="overflow-x-hidden">
@@ -303,7 +309,7 @@
                     <p class="max-w-3xl mx-auto text-lg text-gray-300 leading-relaxed">
                         A warm and cozy, open-source operating system compatible with existing apps, games and drivers. The main idea is to efficiently create a compatible environment for existing software and provide the best user experience on a personal computer.
                     </p>
-                    <div class="mt-10 mx-auto max-w-4xl">
+                    <div class="mt-10 mx-auto max-w-4xl about-screenshot-container">
                         <picture>
                             <source srcset="https://greenteaos.github.io/assets/images/shot.jpg" type="image/webp">
                             <img src="https://greenteaos.github.io/assets/images/shot.jpg"
