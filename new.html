@@ -498,7 +498,8 @@
         const canvas = document.getElementById('particle-canvas');
         const ctx = canvas.getContext('2d');
         let particles = [];
-        const particleCount = 70; // More particles for an "epic" feel
+        const particleCount = 100; // Increased particle count
+        const particleColors = ['#A8E6CF', '#DCEDC8', '#FFD3B5', '#FFAAA5', '#FF8C94', '#99EE99']; // Multi-colors
 
         function resizeCanvas() {
             canvas.width = window.innerWidth;
@@ -512,10 +513,11 @@
                 particles.push({
                     x: Math.random() * canvas.width,
                     y: Math.random() * canvas.height,
-                    radius: Math.random() * 1.5 + 0.5, // Smaller, more subtle particles
-                    vx: Math.random() * 0.5 - 0.25, // Slower movement
-                    vy: Math.random() * 0.5 - 0.25,
-                    alpha: Math.random() * 0.7 + 0.3 // Varied opacity
+                    radius: Math.random() * 2 + 1, // Larger particles
+                    vx: Math.random() * 0.8 - 0.4, // Slightly faster movement
+                    vy: Math.random() * 0.8 - 0.4,
+                    alpha: Math.random() * 0.7 + 0.3,
+                    color: particleColors[Math.floor(Math.random() * particleColors.length)] // Random color
                 });
             }
         }
@@ -527,7 +529,7 @@
             particles.forEach(p => {
                 ctx.beginPath();
                 ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2, false);
-                ctx.fillStyle = `rgba(180, 255, 180, ${p.alpha})`; // Light green tint
+                ctx.fillStyle = `rgba(${parseInt(p.color.slice(1, 3), 16)}, ${parseInt(p.color.slice(3, 5), 16)}, ${parseInt(p.color.slice(5, 7), 16)}, ${p.alpha})`;
                 ctx.fill();
 
                 p.x += p.vx;
