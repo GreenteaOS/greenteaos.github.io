@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greentea OS — The Future of Open-Source Desktops</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Greentea OS: A cutting-edge, open-source desktop operating system designed for modern hardware and seamless app compatibility. Explore the future of computing.">
+    <meta name="keywords" content="Greentea OS, open-source OS, desktop alternative, free operating system, modern OS, Linux alternative, new OS">
+    <meta property="og:title" content="Greentea OS - The Future of Open-Source Desktops">
+    <meta property="og:description" content="Discover Greentea OS, a powerful and user-friendly open-source operating system. Join our vibrant community and shape the future of desktop computing.">
+    <meta property="og:image" content="https://greenteaos.github.io/assets/android-chrome-512x512.png">
+    <meta property="og:url" content="https://greenteaos.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Greentea OS - The Future of Open-Source Desktops">
+    <meta name="twitter:description" content="Discover Greentea OS, a powerful and user-friendly open-source operating system. Join our vibrant community and shape the future of desktop computing.">
+    <meta name="twitter:image" content="https://greenteaos.github.io/assets/android-chrome-512x512.png">
+
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://greenteaos.github.io/assets/images/shot.jpg" as="image">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" as="style">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://greenteaos.github.io/assets/android-chrome-512x512.png">
+
+    <style>
+        :root {
+            --bg-color: #050505;
+            --card-bg: #111111;
+            --border-color: #27272a;
+            --primary-text: #f4f4f5;
+            --secondary-text: #d1d5db;
+            --accent-green: #22c55e;
+            --accent-green-glow: rgba(34, 197, 94, 0.3);
+            --accent-blue: #3b82f6;
+            --discord-color: #5865F2;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--primary-text);
+            scroll-behavior: smooth;
+        }
+
+        /* Enhanced Aurora Background */
+        .animated-aurora {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 70% 20%, hsla(145, 76%, 40%, 0.4) 0%, transparent 40%),
+                radial-gradient(ellipse at 30% 30%, hsla(210, 80%, 45%, 0.4) 0%, transparent 40%),
+                radial-gradient(ellipse at 80% 80%, hsla(280, 70%, 50%, 0.4) 0%, transparent 40%);
+            background-size: 300% 300%;
+            animation: aurora-animation 30s ease infinite;
+            pointer-events: none; /* Allow clicks to pass through */
+        }
+
+        @keyframes aurora-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Canvas for particle effects */
+        #particle-canvas {
+            position: absolute;
+            inset: 0;
+            z-index: 0; /* Behind other content but above aurora */
+        }
+
+        /* Hero image responsiveness and positioning */
+        .hero-float-container {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 5vh;
+            z-index: 1; /* Ensure it's above aurora/particles */
+        }
+
+        .hero-float {
+            width: 90%;
+            max-width: 900px; /* Slightly larger max-width */
+            animation: float 6s ease-in-out infinite;
+            transform: translateY(10%);
+        }
+
+        @media (min-width: 1024px) {
+            .hero-float {
+                max-width: 1100px; /* Larger max-width for desktops */
+                transform: translateY(20%);
+            }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Fade-in animations */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .fade-in-section.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Card glow effect */
+        .card-glow {
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            overflow: hidden; /* For pseudo-element glow */
+        }
+
+        .card-glow:hover {
+            transform: translateY(-8px) scale(1.02); /* Slight scale on hover */
+            box-shadow: 0 0 40px 5px rgba(0,0,0,0.6); /* More prominent shadow */
+            border-color: var(--accent-green);
+        }
+
+        /* Add a subtle pseudo-element glow on hover */
+        .card-glow::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, var(--accent-green-glow) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .card-glow:hover::before {
+            opacity: 0.8;
+        }
+
+        .pulse-glow {
+            animation: pulse-glow-animation 2s infinite;
+        }
+
+        @keyframes pulse-glow-animation {
+            0% { box-shadow: 0 0 15px 0px rgba(88, 101, 242, 0.4); }
+            50% { box-shadow: 0 0 30px 5px rgba(88, 101, 242, 0.6); }
+            100% { box-shadow: 0 0 15px 0px rgba(88, 101, 242, 0.4); }
+        }
+
+        /* Mobile menu smooth transition */
+        #mobile-menu {
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        #mobile-menu.is-open {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* Micro-interactions for buttons and links */
+        a, button {
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+        a:hover, button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Focus styles for accessibility */
+        a:focus, button:focus {
+            outline: 2px solid var(--accent-green);
+            outline-offset: 2px;
+        }
+
+        /* Styling for the LLM section */
+        #llm-input-area {
+            min-height: 100px;
+            resize: vertical;
+        }
+        #llm-output-area {
+            min-height: 150px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 1rem;
+            border-radius: 0.75rem;
+            white-space: pre-wrap; /* Preserve whitespace and line breaks */
+            word-break: break-word; /* Break long words */
+        }
+        #llm-loading-indicator {
+            display: none; /* Hidden by default */
+        }
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid var(--accent-green);
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/80 via-black/50 to-transparent backdrop-blur-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3">
+                <img src="https://avatars.githubusercontent.com/u/19654552?s=200&v=4" alt="Greentea OS Project Logo" class="h-8 w-8" loading="lazy" onerror="this.src='https://placehold.co/512x512/050505/e5e7eb?text=Logo';">
+                <span class="text-xl font-bold text-white">Greentea OS</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="https://www.youtube.com/@GreenteaOS" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2" role="link"><i class="ph-fill ph-youtube-logo"></i>YouTube</a>
+                <a href="https://discord.gg/k4jKXyYj" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2" role="link"><i class="ph-fill ph-discord-logo"></i>Discord</a>
+                <a href="https://github.com/greenteaos" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors flex items-center gap-2" role="link"><i class="ph-fill ph-github-logo"></i>GitHub</a>
+            </nav>
+            <a href="#community" class="hidden md:block bg-green-600 hover:bg-green-500 text-white font-semibold px-5 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-green-500/20 hover:shadow-green-500/40" role="button">
+                Try Now
+            </a>
+            <button id="mobile-menu-button" class="md:hidden text-white" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle mobile menu">
+                <i class="ph ph-list text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 bg-black/50 backdrop-blur-lg">
+             <a href="https://www.youtube.com/@GreenteaOS" target="_blank" rel="noopener noreferrer" class="block py-2 text-gray-300 hover:text-white" role="link">YouTube</a>
+             <a href="https://discord.gg/k4jKXyYj" target="_blank" rel="noopener noreferrer" class="block py-2 text-gray-300 hover:text-white" role="link">Discord</a>
+             <a href="https://github.com/greenteaos" target="_blank" rel="noopener noreferrer" class="block py-2 text-gray-300 hover:text-white" role="link">GitHub</a>
+             <a href="#community" class="block mt-2 bg-green-600 hover:bg-green-500 text-white font-semibold text-center py-2 rounded-lg" role="button">Join Community</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen min-h-[600px] w-full flex flex-col justify-center items-center text-center overflow-hidden">
+            <div class="absolute inset-0 animated-aurora"></div>
+            <canvas id="particle-canvas" class="absolute inset-0 z-0"></canvas>
+            <div class="absolute inset-0 bg-black/60 z-5"></div>
+
+            <div class="relative z-10 px-6 mt-[-10vh]">
+                <div class="fade-in-section">
+                    <span class="inline-block bg-yellow-900/50 text-yellow-300 border border-yellow-700 rounded-full px-4 py-1 text-sm font-semibold mb-6">
+                        Note: This project is in active development and has not been released.
+                    </span>
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-white to-green-400 tracking-tighter mb-6 leading-tight">
+                        Greentea OS: Open-Source Freedom for Your Desktop
+                    </h1>
+                    <p class="max-w-3xl mx-auto text-lg text-gray-300 mb-10">
+                        Pioneering a new path for desktop alternatives. Our project aims to provide a familiar UI, run existing apps, and make you a happy computer user.
+                    </p>
+                    <a href="#community" class="bg-green-600 hover:bg-green-500 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-green-500/20 hover:shadow-green-500/40" role="button">
+                        Join the Community
+                    </a>
+                </div>
+            </div>
+
+            <!-- Floating Screenshot -->
+            <div class="hero-float-container fade-in-section">
+                <picture class="hero-float">
+                    <source srcset="https://greenteaos.github.io/assets/images/shot.jpg" type="image/webp">
+                    <img src="https://greenteaos.github.io/assets/images/shot.jpg"
+                         loading="lazy"
+                         onerror="this.onerror=null;this.src='https://placehold.co/1920x1080/050505/e5e7eb?text=Greentea+OS+Desktop';"
+                         alt="Greentea OS desktop interface showcasing a modern, dark-themed UI"
+                         class="rounded-2xl aspect-video object-cover w-full shadow-2xl shadow-black/50">
+                </picture>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 sm:py-24 bg-black">
+            <div class="container mx-auto px-6 text-center">
+                <div class="fade-in-section">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">About Greentea OS</h2>
+                    <p class="max-w-3xl mx-auto text-lg text-gray-300 leading-relaxed">
+                        A warm and cozy, open-source operating system compatible with existing apps, games and drivers. The main idea is to efficiently create a compatible environment for existing software and provide the best user experience on a personal computer.
+                    </p>
+                    <div class="mt-10">
+                        <iframe class="mx-auto rounded-lg shadow-lg" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Greentea OS Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                    </div>
+
+                    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                        <div class="card-glow p-6 rounded-2xl">
+                            <h3 class="text-xl font-bold text-white mb-4">Roadmap</h3>
+                            <ul class="space-y-2 text-[var(--secondary-text)]">
+                                <li>[x] Alpha release with core UI</li>
+                                <li>[ ] App compatibility beta</li>
+                                <li>[ ] Broad hardware support</li>
+                            </ul>
+                        </div>
+                        <div class="card-glow p-6 rounded-2xl">
+                            <h3 class="text-xl font-bold text-white mb-4">Key Features</h3>
+                            <ul class="space-y-2 text-[var(--secondary-text)]">
+                                <li>Customizable desktop environment</li>
+                                <li>Performance without compromises</li>
+                                <li>Lightweight and user-oriented</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Goals Section -->
+        <section id="goals" class="py-16 sm:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 fade-in-section">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Our Core Principles</h2>
+                    <p class="text-[var(--secondary-text)] mt-4 max-w-2xl mx-auto text-lg">
+                        Building a new OS from scratch with a clear vision for the future of computing.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="fade-in-section card-glow p-8 rounded-2xl"><h3 class="flex items-center gap-3 text-xl font-bold text-white mb-4"><i class="ph-bold ph-stack text-green-400 text-3xl"></i>Existing software</h3><ul class="space-y-2 text-[var(--secondary-text)]"><li>Apps you love and enjoy</li><li>Running unmodified apps</li><li>Long-term compatibility</li></ul></div>
+                    <div class="fade-in-section card-glow p-8 rounded-2xl" style="transition-delay: 100ms;"><h3 class="flex items-center gap-3 text-xl font-bold text-white mb-4"><i class="ph-bold ph-cpu text-blue-400 text-3xl"></i>Modern hardware</h3><ul class="space-y-2 text-[var(--secondary-text)]"><li>64-bit x86 AMD & Intel CPU</li><li>Vulkan and DX12</li><li>USB 3.0/2.0, SATA, NVMe</li></ul></div>
+                    <div class="fade-in-section card-glow p-8 rounded-2xl" style="transition-delay: 200ms;"><h3 class="flex items-center gap-3 text-xl font-bold text-white mb-4"><i class="ph-bold ph-shield-check text-yellow-400 text-3xl"></i>Safe by desigh</h3><ul class="space-y-2 text-[var(--secondary-text)]"><li>Only safe programming languages</li><li>Process isolation</li><li>Sandboxing</li></ul></div>
+                    <div class="fade-in-section card-glow p-8 rounded-2xl" style="transition-delay: 300ms;"><h3 class="flex items-center gap-3 text-xl font-bold text-white mb-4"><i class="ph-bold ph-code text-purple-400 text-3xl"></i>Modern code</h3><ul class="space-y-2 text-[var(--secondary-text)]"><li>New code from scratch</li><li>State-of-the-art approaches</li><li>Innovative kernel design</li></ul></div>
+                    <div class="fade-in-section card-glow p-8 rounded-2xl" style="transition-delay: 400ms;"><h3 class="flex items-center gap-3 text-xl font-bold text-white mb-4"><i class="ph-bold ph-gauge text-red-400 text-3xl"></i>Maximum performance</h3><ul class="space-y-2 text-[var(--secondary-text)]"><li>Instant single-step updates</li><li>Low memory usage</li><li>Performance-oriented features</li></ul></div>
+                    <div class="fade-in-section card-glow p-8 rounded-2xl" style="transition-delay: 500ms;"><h3 class="flex items-center gap-3 text-xl font-bold text-white mb-4"><i class="ph-bold ph-users-three text-orange-400 text-3xl"></i>Shared vision</h3><ul class="space-y-2 text-[var(--secondary-text)]"><li>Fully open-source codebase</li><li>Community feedback shapes our path</li><li>Built by volunteers, for everyone</li></ul></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gemini API Feature Idea Generator -->
+        <section id="feature-generator" class="py-16 sm:py-24 bg-black">
+            <div class="container mx-auto px-6 text-center">
+                <div class="fade-in-section">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Brainstorm Greentea OS Features with AI</h2>
+                    <p class="text-[var(--secondary-text)] mt-4 max-w-2xl mx-auto mb-10 text-lg">
+                        Curious about what Greentea OS could do? Enter a prompt and let our AI suggest innovative features!
+                    </p>
+                    <div class="max-w-2xl mx-auto bg-card-bg p-8 rounded-2xl border border-border-color shadow-lg">
+                        <textarea id="llm-input-area" class="w-full p-4 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-accent-green mb-4" rows="4" placeholder="e.g., 'What kind of security features could Greentea OS have?' or 'Suggest a unique productivity tool.'"></textarea>
+                        <button id="generate-feature-button" class="bg-accent-blue hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 w-full sm:w-auto mx-auto" role="button">
+                            <i class="ph-bold ph-sparkle text-xl"></i>
+                            <span>Generate Feature Idea</span>
+                        </button>
+                        <div id="llm-loading-indicator" class="mt-4 flex justify-center items-center gap-2 hidden">
+                            <div class="spinner"></div>
+                            <span class="text-[var(--secondary-text)]">Generating idea...</span>
+                        </div>
+                        <div id="llm-output-area" class="mt-8 text-left text-[var(--secondary-text)] overflow-auto">
+                            <!-- AI generated content will appear here -->
+                            No feature ideas generated yet. Try typing a prompt above!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community/CTA Section -->
+        <section id="community" class="py-16 sm:py-24 bg-black">
+            <div class="container mx-auto px-6 text-center">
+                <div class="fade-in-section">
+                    <img src="https://raw.githubusercontent.com/GreenteaOS/.github/kawaii/profile/logo_white_leaves.png" alt="Greentea OS Logo Icon" class="h-20 mx-auto mb-6" loading="lazy" onerror="this.src='https://placehold.co/512x512/050505/e5e7eb?text=Logo';">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Join our Development Journey</h2>
+                    <p class="text-[var(--secondary-text)] mt-4 max-w-2xl mx-auto mb-10 text-lg">
+                        Show your awareness and support Greentea OS. Your feedback, contributions, and ideas are vital. Join our Discord to shape the future of this new OS.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                        <a href="https://discord.gg/k4jKXyYj" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-[var(--discord-color)] hover:opacity-90 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 pulse-glow" role="button">
+                            <i class="ph-fill ph-discord-logo text-2xl"></i>
+                            <span>Join Discord Server</span>
+                        </a>
+                    </div>
+                    <div class="mt-10 flex flex-col sm:flex-row justify-center gap-8 text-[var(--secondary-text)] text-lg">
+                        <div><strong>1,000+</strong> Commits</div>
+                        <div><strong>10,000+</strong> Code Lines</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gray-900/50">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2025 Greentea OS Project. All Rights Reserved. An open-source community effort.</p>
+            <p class="mt-2">Free desktop OS alternative. Open source desktop operating system. Alternatively Green tea OS or GreenTeaOS.</p>
+        </div>
+    </footer>
+
+    <script defer>
+        // --- General Website Functionality ---
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const header = document.querySelector('header');
+
+        mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('is-open');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.addEventListener('click', (event) => {
+            if (event.target.tagName === 'A') {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('is-open');
+            }
+        });
+
+        // Smooth scroll with offset for fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = anchor.getAttribute('href');
+                if (targetId === '#') {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                    return;
+                }
+                const target = document.querySelector(targetId);
+                if (target) {
+                    const headerHeight = header ? header.offsetHeight : 80;
+                    window.scrollTo({
+                        top: target.offsetTop - headerHeight,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Scroll-triggered animations with IntersectionObserver
+        const sections = document.querySelectorAll('.fade-in-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const delay = entry.target.style.transitionDelay ? parseInt(entry.target.style.transitionDelay) : 0;
+                    setTimeout(() => {
+                        entry.target.classList.add('in-view');
+                    }, delay);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // --- Particle Background Effect ---
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        const particleCount = 70; // More particles for an "epic" feel
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            createParticles(); // Recreate particles on resize to avoid stretching
+        }
+
+        function createParticles() {
+            particles = [];
+            for (let i = 0; i < particleCount; i++) {
+                particles.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    radius: Math.random() * 1.5 + 0.5, // Smaller, more subtle particles
+                    vx: Math.random() * 0.5 - 0.25, // Slower movement
+                    vy: Math.random() * 0.5 - 0.25,
+                    alpha: Math.random() * 0.7 + 0.3 // Varied opacity
+                });
+            }
+        }
+
+        function drawParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.globalCompositeOperation = 'lighter'; // For a glowing effect
+
+            particles.forEach(p => {
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2, false);
+                ctx.fillStyle = `rgba(180, 255, 180, ${p.alpha})`; // Light green tint
+                ctx.fill();
+
+                p.x += p.vx;
+                p.y += p.vy;
+
+                // Wrap particles around the screen
+                if (p.x < -p.radius) p.x = canvas.width + p.radius;
+                if (p.y < -p.radius) p.y = canvas.height + p.radius;
+                if (p.x > canvas.width + p.radius) p.x = -p.radius;
+                if (p.y > canvas.height + p.radius) p.y = -p.radius;
+            });
+
+            requestAnimationFrame(drawParticles);
+        }
+
+        window.addEventListener('load', () => {
+            resizeCanvas(); // Initial resize and particle creation
+            drawParticles(); // Start the animation loop
+        });
+        window.addEventListener('resize', resizeCanvas);
+
+
+        // --- Gemini API Integration for Feature Generation ---
+        const generateFeatureButton = document.getElementById('generate-feature-button');
+        const llmInputArea = document.getElementById('llm-input-area');
+        const llmOutputArea = document.getElementById('llm-output-area');
+        const llmLoadingIndicator = document.getElementById('llm-loading-indicator');
+
+        generateFeatureButton.addEventListener('click', async () => {
+            const userPrompt = llmInputArea.value.trim();
+            if (!userPrompt) {
+                llmOutputArea.textContent = "Please enter a prompt to generate a feature idea.";
+                return;
+            }
+
+            llmLoadingIndicator.classList.remove('hidden'); // Show loading indicator
+            generateFeatureButton.disabled = true; // Disable button during generation
+            llmOutputArea.textContent = ""; // Clear previous output
+
+            try {
+                // Construct the prompt for the LLM
+                let chatHistory = [{ role: "user", parts: [{ text: `Generate an innovative and concise feature idea for an open-source desktop operating system named Greentea OS, based on this user request: "${userPrompt}". Focus on a single, compelling idea, and explain it briefly.` }] }];
+
+                const payload = {
+                    contents: chatHistory,
+                    generationConfig: {
+                        temperature: 0.7, // Adjust temperature for creativity
+                        maxOutputTokens: 200 // Limit output length
+                    }
+                };
+
+                const apiKey = ""; // Canvas will automatically provide the API key
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    console.error('API Error:', errorData);
+                    llmOutputArea.textContent = `Error: Failed to generate feature idea. ${errorData.error?.message || 'Unknown error.'}`;
+                    return;
+                }
+
+                const result = await response.json();
+
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const generatedText = result.candidates[0].content.parts[0].text;
+                    llmOutputArea.textContent = generatedText;
+                } else {
+                    llmOutputArea.textContent = "Could not generate a feature idea. Please try a different prompt.";
+                }
+            } catch (error) {
+                console.error("Fetch error:", error);
+                llmOutputArea.textContent = "An error occurred while connecting to the AI. Please try again.";
+            } finally {
+                llmLoadingIndicator.classList.add('hidden'); // Hide loading indicator
+                generateFeatureButton.disabled = false; // Re-enable button
+            }
+        });
+    </script>
+</body>
+</html>
