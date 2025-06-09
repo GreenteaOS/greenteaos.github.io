@@ -47,6 +47,7 @@
             --accent-green-glow: rgba(34, 197, 94, 0.3);
             --accent-blue: #3b82f6;
             --discord-color: #5865F2;
+            --patreon-color: #FF424D; /* Patreon color */
         }
 
         body {
@@ -95,7 +96,7 @@
 
         .hero-float {
             width: 90%;
-            max-width: 900px; /* Slightly larger max-width */
+            max-width: 900px;
             animation: float 6s ease-in-out infinite;
             transform: translateY(10%);
         }
@@ -136,7 +137,7 @@
 
         .card-glow:hover {
             transform: translateY(-8px) scale(1.02); /* Slight scale on hover */
-            box-shadow: 0 0 40px 5px rgba(0,0,0,0.6); /* More prominent shadow */
+            box-shadow: 0 0 40px 5px rgba(0,0,0,0.6);
             border-color: var(--accent-green);
         }
 
@@ -280,17 +281,6 @@
                 </div>
             </div>
 
-            <!-- Floating Screenshot -->
-            <div class="hero-float-container fade-in-section">
-                <picture class="hero-float">
-                    <source srcset="https://greenteaos.github.io/assets/images/shot.jpg" type="image/webp">
-                    <img src="https://greenteaos.github.io/assets/images/shot.jpg"
-                         loading="lazy"
-                         onerror="this.onerror=null;this.src='https://placehold.co/1920x1080/050505/e5e7eb?text=Greentea+OS+Desktop';"
-                         alt="Greentea OS desktop interface showcasing a modern, dark-themed UI"
-                         class="rounded-2xl aspect-video object-cover w-full shadow-2xl shadow-black/50">
-                </picture>
-            </div>
         </section>
 
         <!-- About Section -->
@@ -301,17 +291,24 @@
                     <p class="max-w-3xl mx-auto text-lg text-gray-300 leading-relaxed">
                         A warm and cozy, open-source operating system compatible with existing apps, games and drivers. The main idea is to efficiently create a compatible environment for existing software and provide the best user experience on a personal computer.
                     </p>
-                    <div class="mt-10">
-                        <iframe class="mx-auto rounded-lg shadow-lg" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Greentea OS Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                    <div class="mt-10 mx-auto max-w-4xl">
+                        <picture>
+                            <source srcset="https://greenteaos.github.io/assets/images/shot.jpg" type="image/webp">
+                            <img src="https://greenteaos.github.io/assets/images/shot.jpg"
+                                 loading="lazy"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/1920x1080/050505/e5e7eb?text=Greentea+OS+Desktop';"
+                                 alt="Greentea OS desktop screenshot showcasing core UI elements and a dark theme"
+                                 class="rounded-2xl aspect-video object-cover w-full shadow-2xl shadow-black/50">
+                        </picture>
                     </div>
 
                     <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
                         <div class="card-glow p-6 rounded-2xl">
                             <h3 class="text-xl font-bold text-white mb-4">Roadmap</h3>
                             <ul class="space-y-2 text-[var(--secondary-text)]">
-                                <li>[x] Alpha release with core UI</li>
-                                <li>[ ] App compatibility beta</li>
-                                <li>[ ] Broad hardware support</li>
+                                <li class="flex items-center gap-2"><i class="ph-fill ph-check-circle text-green-500 text-xl"></i>Alpha release with core UI</li>
+                                <li class="flex items-center gap-2"><i class="ph ph-circle text-gray-500 text-xl"></i>App compatibility beta</li>
+                                <li class="flex items-center gap-2"><i class="ph ph-circle text-gray-500 text-xl"></i>Broad hardware support</li>
                             </ul>
                         </div>
                         <div class="card-glow p-6 rounded-2xl">
@@ -339,7 +336,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div class="fade-in-section card-glow p-8 rounded-2xl"><h3 class="flex items-center gap-3 text-xl font-bold text-white mb-4"><i class="ph-bold ph-stack text-green-400 text-3xl"></i>Existing software</h3><ul class="space-y-2 text-[var(--secondary-text)]"><li>Apps you love and enjoy</li><li>Running unmodified apps</li><li>Long-term compatibility</li></ul></div>
                     <div class="fade-in-section card-glow p-8 rounded-2xl" style="transition-delay: 100ms;"><h3 class="flex items-center gap-3 text-xl font-bold text-white mb-4"><i class="ph-bold ph-cpu text-blue-400 text-3xl"></i>Modern hardware</h3><ul class="space-y-2 text-[var(--secondary-text)]"><li>64-bit x86 AMD & Intel CPU</li><li>Vulkan and DX12</li><li>USB 3.0/2.0, SATA, NVMe</li></ul></div>
-                    <div class="fade-in-section card-glow p-8 rounded-2xl" style="transition-delay: 200ms;"><h3 class="flex items-center gap-3 text-xl font-bold text-white mb-4"><i class="ph-bold ph-shield-check text-yellow-400 text-3xl"></i>Safe by desigh</h3><ul class="space-y-2 text-[var(--secondary-text)]"><li>Only safe programming languages</li><li>Process isolation</li><li>Sandboxing</li></ul></div>
+                    <div class="fade-in-section card-glow p-8 rounded-2xl" style="transition-delay: 200ms;"><h3 class="flex items-center gap-3 text-xl font-bold text-white mb-4"><i class="ph-bold ph-shield-check text-yellow-400 text-3xl"></i>Safe by design</h3><ul class="space-y-2 text-[var(--secondary-text)]"><li>Only safe programming languages</li><li>Process isolation</li><li>Sandboxing</li></ul></div>
                     <div class="fade-in-section card-glow p-8 rounded-2xl" style="transition-delay: 300ms;"><h3 class="flex items-center gap-3 text-xl font-bold text-white mb-4"><i class="ph-bold ph-code text-purple-400 text-3xl"></i>Modern code</h3><ul class="space-y-2 text-[var(--secondary-text)]"><li>New code from scratch</li><li>State-of-the-art approaches</li><li>Innovative kernel design</li></ul></div>
                     <div class="fade-in-section card-glow p-8 rounded-2xl" style="transition-delay: 400ms;"><h3 class="flex items-center gap-3 text-xl font-bold text-white mb-4"><i class="ph-bold ph-gauge text-red-400 text-3xl"></i>Maximum performance</h3><ul class="space-y-2 text-[var(--secondary-text)]"><li>Instant single-step updates</li><li>Low memory usage</li><li>Performance-oriented features</li></ul></div>
                     <div class="fade-in-section card-glow p-8 rounded-2xl" style="transition-delay: 500ms;"><h3 class="flex items-center gap-3 text-xl font-bold text-white mb-4"><i class="ph-bold ph-users-three text-orange-400 text-3xl"></i>Shared vision</h3><ul class="space-y-2 text-[var(--secondary-text)]"><li>Fully open-source codebase</li><li>Community feedback shapes our path</li><li>Built by volunteers, for everyone</li></ul></div>
@@ -387,6 +384,11 @@
                         <a href="https://discord.gg/k4jKXyYj" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-[var(--discord-color)] hover:opacity-90 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 pulse-glow" role="button">
                             <i class="ph-fill ph-discord-logo text-2xl"></i>
                             <span>Join Discord Server</span>
+                        </a>
+                        <!-- New Patreon Button -->
+                        <a href="https://www.patreon.com/your-patreon-page" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-[var(--patreon-color)] hover:opacity-90 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105" role="button">
+                            <i class="ph-fill ph-patreon-logo text-2xl"></i>
+                            <span>Become a Patron</span>
                         </a>
                     </div>
                     <div class="mt-10 flex flex-col sm:flex-row justify-center gap-8 text-[var(--secondary-text)] text-lg">
